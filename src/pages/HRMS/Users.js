@@ -4,6 +4,7 @@ import Userlist from '../../components/Users/Userlist';
 import Adduser from '../../components/Users/Adduser';
 import Footer from '../../layouts/Footer';
 import { Button, Form } from 'react-bootstrap';
+import Sidebar from '../../layouts/Sidebar';
 
 export default function Users() {
   const [activeButton, setActiveButton] = useState('userlist');
@@ -18,7 +19,10 @@ export default function Users() {
  
     
   return (
-    <div className='users-main px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='users-main px-3'>
       <div>
       <Header/>
       </div>
@@ -46,5 +50,7 @@ export default function Users() {
       <Footer/>
       </div>
     </div>
+    </div>
+    </>
   )
 }

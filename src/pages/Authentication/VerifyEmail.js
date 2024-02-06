@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import img1 from '../../assets/images/slider1.svg'
 import img2 from '../../assets/images/slider2.svg'
 import img3 from '../../assets/images/slider3.svg'
-import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+// import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'
 
 

@@ -5,7 +5,7 @@ import Employeelist from '../../components/Employee/Employeelist';
 import LeaveEmployee from '../../components/Employee/LeaveEmployee';
 import VIewEmplyoee from '../../components/Employee/VIewEmplyoee';
 import { Button, Modal, Form } from 'react-bootstrap';
-
+import Sidebar from '../../layouts/Sidebar';
 
 export default function Employee() {
   const [activeButton, setActiveButton] = useState('employeelist');
@@ -21,8 +21,12 @@ export default function Employee() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
   return (
-    <div className='employee-main px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='employee-main px-3'>
     <Header/>
     
     <div className='d-flex justify-content-between'>
@@ -116,5 +120,7 @@ export default function Employee() {
     
     <Footer/>
     </div>
+    </div>
+    </>
   )
 }

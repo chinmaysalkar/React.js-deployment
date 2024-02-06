@@ -1,5 +1,4 @@
 import './App.css';
-import Sidebar from './layouts/Sidebar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Dashboard from '../src/pages/HRMS/Dashboard';
@@ -53,24 +52,24 @@ import VerifyEmail from './pages/Authentication/VerifyEmail';
 
 function App() {
   
-  const shouldRenderSidebar =
-  !window.location.pathname.includes('/login') &&
-  !window.location.pathname.includes('/register') &&
-  !window.location.pathname.includes('/forgotpassword') &&
-  !window.location.pathname.includes('/error404') &&
-  !window.location.pathname.includes('/error500') &&
-  !window.location.pathname.includes('/newpassword') && 
-  !window.location.pathname.includes('/verifyemail'); 
+  
   
   
   return (
    <>
    
-   <div className='main d-flex'>    
-    <Router> 
-      {shouldRenderSidebar && <Sidebar />}
+   <div> 
+    <Router>
       <Routes>
-        <Route path="/" element={<Dashboard />}/>
+        <Route path="/" element={<Login/>  }/>
+        <Route path="/register" element={<Register />}/>
+        <Route path="/forgotpassword" element={<ForgotPassword />}/>
+        <Route path="/newpassword" element={<NewPassword />}/>
+        <Route path="/verifyemail" element={<VerifyEmail />}/>
+        <Route path="/error404" element={<Error404 />}/>
+        <Route path="/error500" element={<Error500 />}/>
+
+        <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/users" element={<Users />}/>
         <Route path="/holidays" element={<Holidays />}/>
         <Route path="/department" element={<Department />}/>
@@ -107,13 +106,6 @@ function App() {
         <Route path="/applicants" element={<Applicant />}/>
         <Route path="/resumes" element={<Resumes />}/>
         <Route path="/settings" element={<Settings />}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/register" element={<Register />}/>
-        <Route path="/forgotpassword" element={<ForgotPassword />}/>
-        <Route path="/newpassword" element={<NewPassword />}/>
-        <Route path="/verifyemail" element={<VerifyEmail />}/>
-        <Route path="/error404" element={<Error404 />}/>
-        <Route path="/error500" element={<Error500 />}/>
         
       </Routes>
       

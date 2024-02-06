@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList,faPlus, faTrash, faEnvelope, faPhone, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import avatar1 from '../../assets/images/avatar1.jpg'
+import Sidebar from '../../layouts/Sidebar';
+
 export default function Contact() {
     const contactData = [
         { imageSrc: avatar1, name: 'John Smith', phone: '+264-625-2583', email: 'johnsmith@info.com', address: '455 S. Airport St. Moncks Corner, SC 29461' },
@@ -21,7 +23,10 @@ export default function Contact() {
 
       
   return (
-    <div className='main-sidebar-pages px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='main-sidebar-pages px-3'>
         <Header/>
         
         <div className="section-body mt-3">
@@ -132,5 +137,7 @@ export default function Contact() {
 
         <Footer/>
     </div>
+    </div>
+    </>
   )
 }

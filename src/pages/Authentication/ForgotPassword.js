@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import img1 from '../../assets/images/slider1.svg'
 import img2 from '../../assets/images/slider2.svg'
 import img3 from '../../assets/images/slider3.svg'
-import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+// import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'
 
 
@@ -27,7 +28,7 @@ export default function ForgotPassword() {
             <div className="card">
                 <div className="text-center mb-2">
                     <div className="header-brand">
-                    <img src={logo} alt="" className='avatar-sml logo-login'/>
+                    <img src={logo} alt="" className='logo-login'/>
                     </div>
                 </div>
                 <div className="card-body">
@@ -61,7 +62,7 @@ export default function ForgotPassword() {
                     
                 </div>
                 <div className="text-center text-muted">
-                    Forget it, <Link to="/login">Send me Back</Link> to the Sign in screen.
+                    Forget it, <Link to="/">Send me Back</Link> to the Sign in screen.
                 </div>
             </div>
             </div>

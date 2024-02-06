@@ -3,6 +3,7 @@ import Header from '../../layouts/Header';
 import Footer from '../../layouts/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
+import Sidebar from '../../layouts/Sidebar';
 
 const Search = () => {
   const [activeTab, setActiveTab] = useState('All');
@@ -154,7 +155,10 @@ const Search = () => {
   };
 
   return (
-    <div className="main-sidebar-pages px-3">
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className="main-sidebar-pages px-3">
       <Header />
 
       <div className="section-body mt-3">
@@ -233,6 +237,8 @@ const Search = () => {
 
       <Footer />
     </div>
+    </div>
+    </>
   );
 };
 

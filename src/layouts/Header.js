@@ -2,14 +2,17 @@ import React, {useState} from 'react'
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope,faBell, faUser,faGear,faPaperPlane,faCircleQuestion,faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope,faBell, faUser,faGear,faPaperPlane,faCircleQuestion,faArrowRightFromBracket, faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 import ReactCountryFlag from "react-country-flag"
 import { Dropdown } from 'react-bootstrap';
 import { FaCheck, FaUser, FaThumbsUp, FaQuestionCircle, FaShoppingCart } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import avatar1 from '../assets/images/avatar1.jpg'
 
+
 export default function Header() {
+
+
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState(null);
 
@@ -98,7 +101,7 @@ export default function Header() {
     const getPageSpecificUsername = (pathname) => {
         
         switch (pathname) {
-        case '/':
+        case '/dashboard':
             return 'HR Dashboard';
         case '/report':
             return 'Report';
@@ -209,7 +212,10 @@ export default function Header() {
         <div className='mt-3'>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex'>
-                    <Navbar.Brand href="#">{username}</Navbar.Brand>
+                    {/* <button className="toggle-btn" type="button" onClick={toggleSidebar} >
+                        <FontAwesomeIcon icon={faAlignLeft}/>
+                    </button> */}
+                    <Navbar.Brand href="#" className='mt-1'>{username}</Navbar.Brand>
 
                 <div className='d-flex mx-2'>
                     <div className='mx-2'>
@@ -365,7 +371,7 @@ export default function Header() {
                                 <Dropdown.Item><FontAwesomeIcon  icon={faPaperPlane} className="dropdown-icon"/> Message</Dropdown.Item>
                                 <Dropdown.Divider />
                                 <Dropdown.Item><FontAwesomeIcon  icon={faCircleQuestion} className="dropdown-icon"/> Need help?</Dropdown.Item>
-                                <Dropdown.Item href="/login"><FontAwesomeIcon  icon={faArrowRightFromBracket} className="dropdown-icon"/> Sign out</Dropdown.Item>
+                                <Dropdown.Item href="/"><FontAwesomeIcon  icon={faArrowRightFromBracket} className="dropdown-icon"/> Sign out</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
@@ -373,7 +379,7 @@ export default function Header() {
                 </div>
             </div>
         </div>
-        <hr />     
+        <hr />    
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
 import { Button } from 'react-bootstrap'
-
+import Sidebar from '../../layouts/Sidebar'
 import Invoices from '../../components/Accounts/Invoices'
 import Expenses from '../../components/Accounts/Expenses'
 import Payments from '../../components/Accounts/Payments'
@@ -19,6 +19,9 @@ export default function Accounts() {
   };
  
   return (
+    <>
+    <div className='main d-flex'>
+    <Sidebar/>
     <div className='account-main px-3'>
       <Header/>
 
@@ -49,5 +52,7 @@ export default function Accounts() {
       
       <Footer/>
     </div>
+    </div>
+    </>
   )
 }

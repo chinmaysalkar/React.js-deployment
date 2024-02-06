@@ -3,6 +3,8 @@ import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
 import avatar1 from '../../assets/images/avatar1.jpg'
 import { Link } from 'react-router-dom'
+import Sidebar from '../../layouts/Sidebar'
+
 export default function Applicant() {
   const [search, setSearch] = useState('');
   const [status, setStatus] = useState('None Selected');
@@ -100,6 +102,9 @@ const determineTagColor = (isFullTime) => {
   
 
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='pagewidth mx-3'>
         <Header/>
 
@@ -207,5 +212,7 @@ const determineTagColor = (isFullTime) => {
         </div>
         <Footer/>  
     </div>
+   </div>
+   </>
   )
 }

@@ -4,7 +4,7 @@ import Footer from '../../layouts/Footer';
 import ListView from '../../components/Department/ListView';
 import Gridlist from '../../components/Department/Gridlist';
 import { Button, Modal } from 'react-bootstrap';
-
+import Sidebar from '../../layouts/Sidebar';
 
 export default function Department() {
   const [activeButton, setActiveButton] = useState('listview');
@@ -23,7 +23,10 @@ export default function Department() {
     
   return (
 
-    <div className='department-main px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='department-main px-3'>
     <Header/>
 
     <div className='d-flex justify-content-between'>
@@ -74,5 +77,7 @@ export default function Department() {
 
     <Footer/>
     </div>
+    </div>
+    </>
   )
 }

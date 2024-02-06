@@ -5,6 +5,8 @@ import ListView from '../../components/Job Portal/Resumes/ListView';
 import GridView from '../../components/Job Portal/Resumes/GridView';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../layouts/Sidebar';
+
 
 export default function Resumes() {
   const [search, setSearch] = useState('');
@@ -29,7 +31,10 @@ export default function Resumes() {
     };
 
   return (
-    <div className='pagewidth mx-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='pagewidth mx-3'>
         <Header/>
 
         <div className='d-flex justify-content-between mx-2'>
@@ -144,5 +149,7 @@ export default function Resumes() {
         </div>
         <Footer/> 
     </div>
+    </div>
+    </>
   )
 }

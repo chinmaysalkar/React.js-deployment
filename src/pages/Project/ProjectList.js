@@ -5,7 +5,7 @@ import { Button, Form } from 'react-bootstrap';
 import OnGoing from '../../components/Project/ProjectList/OnGoing';
 import UpComing from '../../components/Project/ProjectList/UpComing';
 import Modal from 'react-bootstrap/Modal';
-
+import Sidebar from '../../layouts/Sidebar';
 
 export default function ProjectList() {
   const [activeButton, setActiveButton] = useState('OnGoing');
@@ -24,7 +24,9 @@ export default function ProjectList() {
 
   return ( 
     <>
-    <div className='pagewidth px-3'>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='pagewidth px-3'>
     <Header />
     <div className='d-flex justify-content-between mx-3'>
       <div className='all-top'>
@@ -90,6 +92,7 @@ export default function ProjectList() {
           </Button>
         </Modal.Footer>
     </Modal>
+    </div>
     </> 
     
   );

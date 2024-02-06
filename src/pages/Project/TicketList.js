@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
+import Sidebar from '../../layouts/Sidebar';
 
 export default function TicketList() {
     const ticketData = [
@@ -126,7 +127,10 @@ export default function TicketList() {
        
       ];
   return (
-    <div className='pagewidth px-3'>
+    <>
+    <div className='main d-flex'>
+        <Sidebar/>
+        <div className='pagewidth px-3'>
         <Header/>
 
         <div className='container-fluid mt-3'>
@@ -236,5 +240,7 @@ export default function TicketList() {
 
         <Footer/>
     </div>
+    </div>
+    </>
   )
 }

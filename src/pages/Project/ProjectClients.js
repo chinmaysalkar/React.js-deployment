@@ -5,10 +5,15 @@ import avatar1 from '../../assets/images/avatar1.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faSlack, faLinkedin, faInstagram, faFlickr, faDropbox, faApple, faPinterest, faSkype, faDribbble, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../layouts/Sidebar';
+
 
 export default function ProjectClients() {
   return (
-    <div className='pagewidth px-3'>
+    <>
+    <div className='main d-flex'>
+        <Sidebar/>
+        <div className='pagewidth px-3'>
         <Header/>
 
         <div className='container-fluid'>
@@ -424,5 +429,7 @@ export default function ProjectClients() {
 
         <Footer/>
     </div>
+    </div>
+    </>
   )
 }

@@ -3,6 +3,8 @@ import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
 import IndexProject from '../../components/Project/IndexProject'
 import Compo from '../../components/Project/ProjectDashboard/compo'
+import Sidebar from '../../layouts/Sidebar'
+
 
 export default function ProjectDashboard() {
 
@@ -33,9 +35,12 @@ export default function ProjectDashboard() {
   };
 
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='pagewidth mx-3'>
       <Header/>
-          <div className='mx-5 mt-3 dashbord-heading'>
+          <div className='mx-3 mt-3 dashbord-heading'>
               <h4>Welcome Jason Porter!</h4>
               <p>Measure How Fast You’re Growing Monthly Recurring Revenue. Learn More</p>
           </div> 
@@ -113,5 +118,7 @@ export default function ProjectDashboard() {
 
       <Footer/>
     </div>
+   </div>
+   </>
   )
 }

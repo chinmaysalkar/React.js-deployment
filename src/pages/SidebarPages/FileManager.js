@@ -6,6 +6,7 @@ import { faPlus, faFolder, faFilePdf,faFileWord } from '@fortawesome/free-solid-
 import avatar1 from '../../assets/images/avatar1.jpg'
 import avatar2 from '../../assets/images/avatar2.jpg'
 import avatar3 from '../../assets/images/avatar3.jpg'
+import Sidebar from '../../layouts/Sidebar';
 
 export default function FileManager() {
   const fileData = [
@@ -101,6 +102,9 @@ export default function FileManager() {
     
   ];
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='main-sidebar-pages px-3'>
         <Header/>
 
@@ -227,5 +231,7 @@ export default function FileManager() {
 
         <Footer/>
     </div>
+   </div>
+   </>
   )
 }

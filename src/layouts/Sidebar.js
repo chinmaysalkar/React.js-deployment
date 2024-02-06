@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightFromBracket,faPhone,faAlignLeft, faComment, faFolder, faCalendar, faCreditCard, faSearch,faGear,faRocket,faMugHot, faSuitcase, faLock, faChevronDown, faChevronUp, faTimes} from '@fortawesome/free-solid-svg-icons'; 
-import logo from '../assets/images/command-symbol-svgrepo-com.svg';
+// import logo from '../assets/images/command-symbol-svgrepo-com.svg';
 import { Link } from 'react-router-dom';
 import avatar from '../assets/images/avatar1.jpg'
 import { faFacebook, faTwitter, faSkype, } from '@fortawesome/free-brands-svg-icons';
+import logo1 from '../assets/images/logo1.png'
 
 
 const Sidebar = () => {
@@ -87,18 +88,19 @@ const Sidebar = () => {
     { id: 3, name: 'Matt Rosales', role: 'CEO, Epic Theme', status: 'offline', avatar: avatar },
   ];
 
-
-
+  
+  
   return (
     <>
    {!isSidebarExpanded1 && (
+    
     <div className="wrapper" >
-
+    
       <div className='sidebar-fixed'>
 
         <div className='mt-3 mb-4'>
-          <div className='logo mx-3'>
-          <Link to="/"><img src={logo} alt="" className='logo1 mx-2  mt-2'/></Link>
+          <div className='logo'>
+          <Link to="/dashboard"><img src={logo1} alt="" className='logo1 mx-2  mt-2'/></Link>
           </div>          
         </div>
 
@@ -145,7 +147,8 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGear} className='side-setting-icon'/>      
           </Link>
 
-          <img src={avatar} alt="" className='sidebar-profile-icon avatar rounded-circle avatar-sml mx-3 mt-2' onClick={toggleSidebar1}/>
+          <div className='px-1'><img src={avatar} alt="" className='sidebar-profile-icon avatar rounded-circle avatar-sml mt-2 mx-3' onClick={toggleSidebar1}/></div>
+          
 
         </div>
 
@@ -391,9 +394,6 @@ const Sidebar = () => {
 
     </div>
     )}  
-
-
-
     <div className={` sid ${isSidebarExpanded1 ? 'expand' : ''}`} style={{ display: isSidebarExpanded1 ? 'block' : 'none', backgroundColor:'white', width:'400px' }}>
       <div className='user-div open mt-4 mx-2 d-flex justify-content-between'>
         <h5 className="brand-name d-flex mx-2">Epic <span className='mx-2'>HR</span></h5>

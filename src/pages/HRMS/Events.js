@@ -4,6 +4,8 @@ import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Header from '../../layouts/Header';
 import Footer from '../../layouts/Footer';
+import Sidebar from '../../layouts/Sidebar';
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,7 +22,10 @@ export default function Events() {
   // ]);
 
   return (
-    <div className='calender-main px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='calender-main px-3'>
       
         <div>
           <Header/>
@@ -47,5 +52,7 @@ export default function Events() {
       
       
     </div>
+    </div>
+    </>
   )
 }

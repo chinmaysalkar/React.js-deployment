@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import img1 from '../../assets/images/slider1.svg'
 import img2 from '../../assets/images/slider2.svg'
 import img3 from '../../assets/images/slider3.svg'
-import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+// import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'
 
 export default function Register() {
@@ -88,7 +89,7 @@ export default function Register() {
                     </form>
                 </div>
                 <div className="text-center text-muted">
-                    Already have an account? <Link to="/login">Sign In</Link>
+                    Already have an account? <Link to="/">Sign In</Link>
                 </div>
                 </div>
             </div>

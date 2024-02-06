@@ -7,6 +7,7 @@ import DropdownMenu from '../../components/DropdownMenu';
 import { FlagIcon } from 'react-flag-kit';
 import avatar1 from '../../assets/images/avatar1.jpg';
 import img from '../../assets/images/we-released.svg'
+import Sidebar from '../../layouts/Sidebar';
 
 export default function JobDashboard() {
     const markers = [
@@ -91,7 +92,10 @@ export default function JobDashboard() {
         }
       };
   return (
-    <div className='pagewidth px-3'>
+    <>
+    <div className='main d-flex'>
+        <Sidebar/>
+        <div className='pagewidth px-3'>
         <Header/>
 
         <div className='section mt-3'>
@@ -402,5 +406,7 @@ export default function JobDashboard() {
 
         <Footer/>
     </div>
+    </div>
+    </>
   )
 }

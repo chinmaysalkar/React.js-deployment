@@ -5,9 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faList,faPlus} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { Card, InputGroup, FormControl } from 'react-bootstrap';
+import Sidebar from '../../../layouts/Sidebar';
 
 export default function ContactAdd() {
   return (
+  <>
+  <div className='main d-flex'> 
+    <Sidebar/>
     <div className='main-sidebar-pages px-3'>
       <Header/>
       <div className="section-body mt-3">
@@ -87,5 +91,7 @@ export default function ContactAdd() {
         
       <Footer/>
     </div>
+  </div>
+  </>
   )
 }

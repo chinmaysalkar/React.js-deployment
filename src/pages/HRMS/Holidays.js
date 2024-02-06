@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
-
+import Sidebar from '../../layouts/Sidebar'
 export default function Holidays() {
     
 
 
 
   return (
+    <>
+    <div className='main d-flex'>
+    <Sidebar/>
     <div className='holiday-main px-3'>
 
         <div>
@@ -95,5 +98,7 @@ export default function Holidays() {
         <Footer/>
         </div>  
     </div>
+    </div>
+    </>
   )
 }

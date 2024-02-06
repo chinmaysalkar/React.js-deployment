@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGear,faAlignRight,faPlus,faRefresh,faCamera,faVideoCamera,faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import avatar1 from '../../assets/images/avatar1.jpg'
 import { Link } from 'react-router-dom';
-
+import Sidebar from '../../layouts/Sidebar';
 
 
 export default function FriendsGroup() {
@@ -119,7 +119,10 @@ export default function FriendsGroup() {
 
 
   return (
-    <div className='main-sidebar-pages px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='main-sidebar-pages px-3'>
         <Header/>
 
 
@@ -241,5 +244,7 @@ export default function FriendsGroup() {
 
     <Footer/>
     </div>
+    </div>
+    </>
   )
 }

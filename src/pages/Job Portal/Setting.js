@@ -9,7 +9,7 @@ import Select from 'react-select';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
+import Sidebar from '../../layouts/Sidebar';
 
 
 export default function Setting() {
@@ -48,6 +48,9 @@ export default function Setting() {
 
   
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='pagewidth px-3'>
         <Header/>
 
@@ -236,5 +239,7 @@ export default function Setting() {
         </div>
         <Footer/> 
     </div>
+   </div>
+   </>
   )
 }

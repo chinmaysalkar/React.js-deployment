@@ -5,7 +5,7 @@ import Footer from '../../layouts/Footer';
 import { Link } from 'react-router-dom';
 import Paylist from '../../components/Payroll/Paylist';
 import Payslip from '../../components/Payroll/Payslip';
-
+import Sidebar from '../../layouts/Sidebar';
 
 
 export default function Payroll() {
@@ -20,7 +20,10 @@ export default function Payroll() {
 
   
   return (
-    <div className='payroll-main px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='payroll-main px-3'>
       
       <Header />
 
@@ -48,5 +51,7 @@ export default function Payroll() {
     <Footer/>
         
     </div>
+    </div>
+    </>
   );
 }

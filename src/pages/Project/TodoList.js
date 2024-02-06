@@ -6,6 +6,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import avatar1 from '../../assets/images/avatar1.jpg';
 import avatar2 from '../../assets/images/avatar2.jpg';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../layouts/Sidebar';
+
 export default function TodoList() {
   const [todoItems, setTodoItems] = useState([
     {
@@ -92,7 +94,10 @@ export default function TodoList() {
   };
 
   return (
-    <div className='pagewidth px-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='pagewidth px-3'>
       <Header />
 
       <div className='section mt-4'>
@@ -171,5 +176,7 @@ export default function TodoList() {
 
       <Footer />
     </div>
+    </div>
+    </>
   );
 }

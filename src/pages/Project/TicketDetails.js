@@ -11,13 +11,18 @@ import img1 from '../../assets/images/1.jpg'
 import img2 from '../../assets/images/2.jpg'
 import EditorComponent from '../../components/Editor';
 import { Link } from 'react-router-dom';
+import Sidebar from '../../layouts/Sidebar';
+
 
 export default function TicketDetails() {
     
 
     
   return (
-    <div className='pagewidth px-3'>
+    <>
+    <div className='main d-flex'>
+        <Sidebar/>
+        <div className='pagewidth px-3'>
     <Header/>
         <div className='section-body mt-3'>
             <div className='container-fluid'>
@@ -333,6 +338,8 @@ export default function TicketDetails() {
 
     <Footer/>
     </div>
+    </div>
+    </>
   )
 }
 

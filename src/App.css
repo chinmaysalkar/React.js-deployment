@@ -282,13 +282,14 @@ body {
 }
 
 .logo{
-  width: 40px;
-  height: 40px;
-  background-color: #5a5278;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  /* background-color: #5a5278; */
+  /* border-radius: 50%; */
 }
 .logo1{
-  width: 23px;
+  width: 50px;
+  height: 40px;
  
 }
 .main {
@@ -334,6 +335,7 @@ body {
 
 .sidebar-profile-icon{
     cursor: pointer;
+    
 }
 .profile-img1{
     width: 60px;
@@ -342,7 +344,8 @@ body {
     background-color: transparent;
     cursor: pointer;
     border: 0;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
+    margin-top: -10px;
 }
 
 .toggle-btn i {
@@ -368,8 +371,8 @@ body {
 
 .sidebar-menu{
     width: 210px;
-    height: 500px;
-    overflow-y: auto; 
+    /* height: 500px; */
+    /* overflow-y: auto;  */
 }
 
 
@@ -1014,7 +1017,7 @@ img {
 
 
 .logo-login{
-    width:  30px;
+    width:  60px;
 }
 
 .auth {

@@ -4,8 +4,13 @@ import Footer from '../../layouts/Footer';
 import EditorComponent from '../../components/Editor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faComments } from '@fortawesome/free-solid-svg-icons';
+import Sidebar from '../../layouts/Sidebar';
+
 export default function Activities() {
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='activities-main px-3'>
         <Header/>
 
@@ -213,5 +218,7 @@ export default function Activities() {
       <Footer/>
       </div>  
     </div>
+   </div>
+   </>
   )
 }

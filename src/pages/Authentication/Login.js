@@ -2,7 +2,8 @@ import React,{useState} from 'react'
 import img1 from '../../assets/images/slider1.svg';
 import img2 from '../../assets/images/slider2.svg';
 import img3 from '../../assets/images/slider3.svg';
-import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+// import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
+import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'; 
 
 export default function Login() {
@@ -65,9 +66,9 @@ export default function Login() {
                             <div className="form-group mb-3">
                                 <label className="form-label d-flex justify-content-between">
                                 Password
-                                <a className="float-right small text-secondary mx-2" href="/forgotpassword">
+                                <Link className="float-right small text-secondary mx-2" to="/forgotpassword">
                                     I forgot password
-                                </a>
+                                </Link>
                                 </label>
                                 <input
                                 type="password"
@@ -89,11 +90,13 @@ export default function Login() {
                                 <span className="custom-control-label mx-2">Remember me</span>
                                 </label>
                             </div>
-                            <div className="form-footer d-grid">
-                                <button type="submit" className="btn btn-primary btn-block btn-top">
-                                Click to login
-                                </button>
-                            </div>
+                            <Link to="/dashboard">
+                                <div className="form-footer d-grid">
+                                    <button type="submit" className="btn btn-primary btn-block btn-top">
+                                    Click to login
+                                    </button>
+                                </div>
+                            </Link>
                             </form>
                         </div>
                         <div className="text-center text-muted">

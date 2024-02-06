@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
 import avatar1 from '../../assets/images/avatar1.jpg'
+import Sidebar from '../../layouts/Sidebar'
 
 export default function Positions() {
   const [search, setSearch] = useState('');
@@ -62,7 +63,10 @@ export default function Positions() {
   };
 
   return (
-    <div className='pagewidth mx-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='pagewidth mx-3'>
         <Header/>
 
         <div className='section-body mt-3'>
@@ -228,5 +232,7 @@ export default function Positions() {
         </div>
         <Footer/> 
     </div>
+    </div>
+    </>
   )
 }

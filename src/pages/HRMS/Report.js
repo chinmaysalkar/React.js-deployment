@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap'
 import Expenses from '../../components/Report/Expenses'
 import Invoice from '../../components/Report/Invoice'
 import Detail from '../../components/Report/Detail'
-
+import Sidebar from '../../layouts/Sidebar'
 export default function Report() {
 
     const [activeButton, setActiveButton] = useState('expenses');
@@ -22,6 +22,9 @@ export default function Report() {
   
 
   return (
+   <>
+   <div className='main d-flex'>
+    <Sidebar/>
     <div className='report-main px-3'>
       <Header/>
 
@@ -58,5 +61,7 @@ export default function Report() {
        
       <Footer/>  
     </div>
+   </div>
+   </>
   )
 }

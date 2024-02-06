@@ -4,6 +4,8 @@ import Footer from '../../layouts/Footer'
 import { Button, Form } from 'react-bootstrap';
 import ListView from '../../components/Project/ProjectTaskBoard/ListView';
 import GridView from '../../components/Project/ProjectTaskBoard/GridView';
+import Sidebar from '../../layouts/Sidebar';
+
 
 export default function TaskBoard() {
     const [currentComponent, setCurrentComponent] = useState('listview');
@@ -22,7 +24,10 @@ export default function TaskBoard() {
         { status: 'In Completed', percentage: 12 },
       ];
   return (
-    <div className='pagewidth mx-3'>
+    <>
+    <div className='main d-flex'>
+      <Sidebar/>
+      <div className='pagewidth mx-3'>
         <Header/>
 
         <div className='d-flex justify-content-between mx-3'>
@@ -94,5 +99,7 @@ export default function TaskBoard() {
 
         <Footer/>
     </div>
+    </div>
+    </>
   )
 }
