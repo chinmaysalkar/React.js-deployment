@@ -162,7 +162,7 @@ export default function compo() {
   return (
     <>
 
-        <div className='section-body mt-3'>
+        <div className='section-body mt-3 mx-1'>
             <div className='container-fluid'>
                 <div className='row d-flex'>
                     <div className='col-xl-4 col-lg-6 col-md-6 mb-3'>
@@ -194,7 +194,7 @@ export default function compo() {
                                 </div>
                             </div>
 
-                            <div className="table-responsive pb-5">
+                            <div className="table-responsive pb-5 mx-1">
                                 <table className="table table-striped table-vcenter mb-0">
                                     <tbody>
                                     {data.map((item, index) => (
@@ -234,7 +234,7 @@ export default function compo() {
                                 <p className="mb-0 font-12">Overall the quality of your support team’s efforts Rating.</p>
                             </div>
 
-                            <div className="table-responsive pb-3">
+                            <div className="table-responsive pb-3 mx-1">
                                 <table className="table table-striped table-vcenter mb-0">
                                     <tbody>
                                     {ratingData.map((item, index) => (
@@ -312,7 +312,7 @@ export default function compo() {
                 <div className='row d-flex mt-3'>
                     <div className='col-12 col-sm-12'>
                         <div className='card'>
-                            <div className='card-header bg-white border-0 d-flex'>
+                            <div className='card-header bg-white border-0 d-flex mt-2'>
                                 <small className='card-title'>
                                 PROJECT SUMMARY
                                 </small>
@@ -323,12 +323,12 @@ export default function compo() {
                                     <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Client Name</th>
-                                        <th>Team</th>
-                                        <th>Project</th>
-                                        <th>Project Cost</th>
-                                        <th>Payment</th>
-                                        <th>Status</th>
+                                        <th>CLIENT NAME</th>
+                                        <th>TEAM</th>
+                                        <th>PROJECT</th>
+                                        <th>PROJECT COST</th>
+                                        <th>PAYMENT</th>
+                                        <th>STATUS</th>
                                     </tr>
                                     </thead>
                                     <tbody>

@@ -46,7 +46,7 @@ export default function ProjectDashboard() {
           </div> 
           <IndexProject/>
 
-          <div className='section-body'>
+          <div className='section-body mx-1'>
             <div className='container-fluid'>
               <div className='row'>
                 <div className='col-lg-4 col-md-12 col-sm-12 d-flex'>
@@ -59,19 +59,19 @@ export default function ProjectDashboard() {
                         <div className="col-lg-4 col-md-12 col-sm-12 border-right pb-4 pt-4">
                           <label className="mb-0"><small className='d-flex'>Total<span className='mx-2'>Project</span></small></label>
                           <h2 className="font-30 font-weight-bold text-col-blue counter">
-                            <span>{totalProjects}</span>
+                            <span className='text-info'>{totalProjects}</span>
                           </h2>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 border-right pb-4 pt-4">
                           <label className="mb-0">On Going</label>
                           <h2 className="font-30 font-weight-bold text-col-blue counter">
-                            <span>{ongoingProjects}</span>
+                            <span className='text-success'>{ongoingProjects}</span>
                           </h2>
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12 pb-4 pt-4">
                           <label className="mb-0">Pending</label>
                           <h2 className="font-30 font-weight-bold text-col-blue counter">
-                            <span>{pendingProjects}</span>
+                            <span className='text-danger'>{pendingProjects}</span>
                           </h2>
                         </div>
                       </div>
