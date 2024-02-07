@@ -22,7 +22,7 @@ export default function Gridlist() {
             <div className="row clearfix">
             {employees.map((employee, index) => (
                 <div key={index} className="col-lg-3 col-md-6">
-                <div className="card mb-2">
+                <div className="card mb-3">
                     <div className="card-body text-center">
                         <img className="img-thumbnail rounded-circle avatar-xxl" src={employee.imageSrc} alt={employee.name} />
                         <h6 className="mt-3">{employee.name}</h6>

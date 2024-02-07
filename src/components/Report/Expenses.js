@@ -54,71 +54,72 @@ export default function Expenses() {
 
   return (
     <div>
-        <div className="row mx-2 mt-3">
-      <div className="col-lg-3 col-md-6">
-        <div className="card">
-          <div className="card-body">
-            <div className="card-value d-flex justify-content-end text-primary">23%</div>
-            <h4 className="mb-1">
-              $<span className="counter"><span>552</span></span>
-            </h4>
-            <div>Computer</div>
-            <div className="mt-4">
-              <div className="progress progress-xs">
-                <div className="progress-bar bg-azure" style={{ width: '23%' }}></div>
+      
+      <div className="row mx-2 mt-3">
+        <div className="col-lg-3 col-md-6">
+          <div className="card">
+            <div className="card-body">
+              <div className="card-value d-flex justify-content-end text-primary">23%</div>
+              <h4 className="mb-1">
+                $<span className="counter"><span>552</span></span>
+              </h4>
+              <div>Computer</div>
+              <div className="mt-4">
+                <div className="progress progress-xs">
+                  <div className="progress-bar bg-azure" style={{ width: '23%' }}></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="col-lg-3 col-md-6">
-        <div className="card">
-          <div className="card-body">
-            <div className="card-value d-flex justify-content-end text-primary">52%</div>
-            <h4 className="mb-1">
-              $<span className="counter"><span>2450</span></span>
-            </h4>
-            <div>Laptop</div>
-            <div className="mt-4">
-              <div className="progress progress-xs">
-                <div className="progress-bar bg-cyan" style={{ width: '52%' }}></div>
+        <div className="col-lg-3 col-md-6">
+          <div className="card">
+            <div className="card-body">
+              <div className="card-value d-flex justify-content-end text-primary">52%</div>
+              <h4 className="mb-1">
+                $<span className="counter"><span>2450</span></span>
+              </h4>
+              <div>Laptop</div>
+              <div className="mt-4">
+                <div className="progress progress-xs">
+                  <div className="progress-bar bg-cyan" style={{ width: '52%' }}></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="col-lg-3 col-md-6">
-        <div className="card">
-          <div className="card-body">
-            <div className="card-value d-flex justify-content-end">27%</div>
-            <h4 className="mb-1">
-              $<span className="counter"><span>1258</span></span>
-            </h4>
-            <div>Accessories</div>
-            <div className="mt-4">
-              <div className="progress progress-xs">
-                <div className="progress-bar bg-danger" style={{ width: '27%' }}></div>
+        <div className="col-lg-3 col-md-6">
+          <div className="card">
+            <div className="card-body">
+              <div className="card-value d-flex justify-content-end">27%</div>
+              <h4 className="mb-1">
+                $<span className="counter"><span>1258</span></span>
+              </h4>
+              <div>Accessories</div>
+              <div className="mt-4">
+                <div className="progress progress-xs">
+                  <div className="progress-bar bg-danger" style={{ width: '27%' }}></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="col-lg-3 col-md-6">
-        <div className="card">
-          <div className="card-body">
-            <div className="card-value d-flex justify-content-end text-danger">12%</div>
-            <h4 className="mb-1">
-              $<span className="counter"><span>562</span></span>
-            </h4>
-            <div>Others</div>
-            <div className="mt-4">
-              <div className="progress progress-xs">
-                <div className="progress-bar bg-pink" style={{ width: '12%' }}></div>
+        <div className="col-lg-3 col-md-6">
+          <div className="card">
+            <div className="card-body">
+              <div className="card-value d-flex justify-content-end text-danger">12%</div>
+              <h4 className="mb-1">
+                $<span className="counter"><span>562</span></span>
+              </h4>
+              <div>Others</div>
+              <div className="mt-4">
+                <div className="progress progress-xs">
+                  <div className="progress-bar bg-pink" style={{ width: '12%' }}></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
 
 

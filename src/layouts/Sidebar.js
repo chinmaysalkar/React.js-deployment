@@ -181,7 +181,7 @@ const Sidebar = () => {
         data-bs-parent="#sidebar"
         >
         <li className="sidebar-item">
-          <Link to="/" className="sidebar-link">
+          <Link to="/dashboard" className="sidebar-link">
             Dashboard
           </Link>
         </li>
@@ -352,7 +352,7 @@ const Sidebar = () => {
         data-bs-parent="#sidebar"
         >
         <li className="sidebar-item">
-          <Link to="/login" className="sidebar-link">
+          <Link to="/" className="sidebar-link">
             Login
           </Link>
         </li>

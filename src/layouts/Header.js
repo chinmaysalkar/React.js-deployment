@@ -300,7 +300,7 @@ export default function Header() {
                         
                         
 
-                        <div className="notification d-flex mt-2">
+                        <div className="notification d-flex mt-1">
                             
                             <Dropdown className='mx-2'>
                                 <Dropdown.Toggle variant="default" className="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1">

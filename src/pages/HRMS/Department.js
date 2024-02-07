@@ -69,7 +69,7 @@ export default function Department() {
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Add
           </Button>
         </Modal.Footer>
     </Modal>

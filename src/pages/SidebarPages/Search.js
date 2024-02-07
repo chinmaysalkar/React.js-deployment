@@ -161,7 +161,7 @@ const Search = () => {
       <div className="main-sidebar-pages px-3">
       <Header />
 
-      <div className="section-body mt-3">
+      <div className="section-body mt-4">
         <div className="container-fluid">
           <div className="row">
             <div className="col-12">
@@ -180,7 +180,7 @@ const Search = () => {
       </div>
 
       <div className="container-fluid mt-3">
-        <ul className="nav nav-tabs mx-3" role="tablist">
+        <ul className="nav nav-tabs mx-0" role="tablist">
         {/* Your tab items here */}
         <li className="nav-item">
             <a
@@ -229,7 +229,7 @@ const Search = () => {
           
         </ul>
 
-        <div className="tab-content mt-3 mx-3">
+        <div className="tab-content mt-3">
           {/* Render tab content based on activeTab */}
           {renderTabContent()}
         </div>
