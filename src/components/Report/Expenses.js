@@ -11,13 +11,13 @@ export default function Expenses() {
   const [currentPage] = useState(1);
 
   const [userList] = useState([
-    {  date: '07 March, 2018',item: 'HP Laptop',imageSrc:  avatar1,orderby: 'Marshall Nichols',amount: '$200', status: 'Pending',   form: 'Paytm', paidby:'Paypal' },
-    {  date: '25 Jun, 2018',item: 'iMack Desktop ',imageSrc:  avatar1,orderby: ' Marshall Nichols', amount: '$378', status: 'Pending',   form: 'ebay USA',paidby:'Paypal' },
-    {  date: '12 July, 2018',item: 'Logitech USB Mouse, Keyboard ',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: '$653', status: 'Approved',   form: 'Amazon',paidby:'Paypal' },
-    {  date: '13 July, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $451', status: 'Approved',  form: 'Amazon',paidby:'MasterCard' },
-    {  date: '27 July, 2018',item: 'Dell Monitor 28 inch',imageSrc:  avatar1,orderby: ' Ava Alexander',amount: ' $989', status: 'Approved',   form: 'Flipkart UK',paidby:'Paypal' },
-    {  date: '07 March, 2018',item: 'Logitech USB Mouse, Keyboard',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $343', status: 'Approved',   form: 'Amazon',paidby:'Paypal' },
-    {  date: '25 Jun, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: ' $653', status: 'Approved',   form: 'Amazon',paidby:'MasterCard' },
+    {  date: '07 March, 2018',item: 'HP Laptop',imageSrc:  avatar1,orderby: 'Marshall Nichols',amount: '$200', status: 'Pending',    paidby:'Paypal' },
+    {  date: '25 Jun, 2018',item: 'iMack Desktop ',imageSrc:  avatar1,orderby: ' Marshall Nichols', amount: '$378', status: 'Pending',   paidby:'Paypal' },
+    {  date: '12 July, 2018',item: 'Logitech USB Mouse, Keyboard ',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: '$653', status: 'Approved',   paidby:'Paypal' },
+    {  date: '13 July, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $451', status: 'Approved',  paidby:'MasterCard' },
+    {  date: '27 July, 2018',item: 'Dell Monitor 28 inch',imageSrc:  avatar1,orderby: ' Ava Alexander',amount: ' $989', status: 'Approved',  paidby:'Paypal' },
+    {  date: '07 March, 2018',item: 'Logitech USB Mouse, Keyboard',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $343', status: 'Approved',   paidby:'Paypal' },
+    {  date: '25 Jun, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: ' $653', status: 'Approved',   paidby:'MasterCard' },
   ]);
 
   const getStatusColor = (status) => {
@@ -135,7 +135,6 @@ export default function Expenses() {
             <tr>
               <th>ITEM</th>
               <th>ORDER BY</th>
-              <th>FORM</th>
               <th>DATE</th>
               <th>PAID BY</th>
               <th>STATUS</th>
@@ -146,8 +145,7 @@ export default function Expenses() {
             {currentPageItems.map((user) => (
               <tr key={user.orderby}>
                 <td>{user.item}</td>
-                <td>{user.orderby}</td>
-                <td>{user.form}</td>   
+                <td>{user.orderby}</td>  
                 <td>{user.date}</td>
                 <td>{renderPaidByIcon(user.paidby)}</td>
                 <td>

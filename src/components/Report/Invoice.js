@@ -105,7 +105,7 @@ export default function Invoice() {
 
 
 
-        <div className='card mt-4 p-3'>
+        <div className='card mt-4 p-3 mx-3'>
           <div className='d-flex justify-content-between mx-3 mb-3'>
             <h6 className='mx-2 mt-3'>INVOICES</h6>
             <Form className="mt-2 d-flex">
