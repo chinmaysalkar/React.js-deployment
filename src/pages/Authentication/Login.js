@@ -5,23 +5,37 @@ import img3 from '../../assets/images/slider3.svg';
 // import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
 import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEyeSlash, faEye} from '@fortawesome/free-solid-svg-icons'; 
+
 
 export default function Login() {
-    const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState('');
+
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+    setPasswordError(validatePassword(newPassword));
   };
 
   const handleRememberMeChange = () => {
     setRememberMe(!rememberMe);
   };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,6 +44,34 @@ export default function Login() {
     console.log('Password:', password);
     console.log('Remember Me:', rememberMe);
   };
+
+
+  const validatePassword = (password) => {
+    const errors = [];
+
+    if (password.length < 8 || password.length > 14) {
+      errors.push("Password must be between 8 and 14 characters.");
+    }
+
+    if (!/[A-Z]/.test(password)) {
+      errors.push("Password must contain at least one uppercase letter.");
+    }
+
+    if (!/[a-z]/.test(password)) {
+      errors.push("Password must contain at least one lowercase letter.");
+    }
+
+    if (!/\d/.test(password)) {
+      errors.push("Password must contain at least one number.");
+    }
+
+    if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
+      errors.push("Password must contain at least one symbol.");
+    }
+
+    return errors.join(" ");
+  };
+
 
   return (
     <div className='pagewidth'>
@@ -70,14 +112,24 @@ export default function Login() {
                                     I forgot password
                                 </Link>
                                 </label>
-                                <input
-                                type="password"
-                                className="form-control"
-                                id="exampleInputPassword1"
-                                placeholder="Password"
-                                value={password}
-                                onChange={handlePasswordChange}
-                                />
+                                <div className="input-group">
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        className={`form-control ${passwordError && "is-invalid"}`}
+                                        id="exampleInputPassword"
+                                        placeholder="Password"
+                                        value={password}
+                                        onChange={handlePasswordChange}
+                                    />
+                                    <span className="input-group-text bg-white" onClick={togglePasswordVisibility}>
+                                        {showPassword ? (
+                                        <FontAwesomeIcon icon={faEyeSlash} />
+                                        ) : (
+                                        <FontAwesomeIcon icon={faEye} />
+                                        )}
+                                    </span>
+                                    </div>
+                                    {passwordError && <div className="invalid-feedback">{passwordError}</div>}
                             </div>
                             <div className="form-group mb-3">
                                 <label className="custom-control custom-checkbox">

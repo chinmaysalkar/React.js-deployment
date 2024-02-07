@@ -35,7 +35,7 @@ export default function Register() {
                     <div className="card-title">CREATE NEW ACCOUNT</div>
                     <form onSubmit={handleSubmit}>
                     <div className="form-group mb-3">
-                        <label className="form-label">Name</label>
+                        <label className="form-label">Name <span className='text-danger'>*</span></label>
                         <input
                         type="text"
                         className="form-control"
@@ -45,7 +45,7 @@ export default function Register() {
                         />
                     </div>
                     <div className="form-group mb-3">
-                        <label className="form-label">Email address</label>
+                        <label className="form-label">Email address <span className='text-danger'>*</span></label>
                         <input
                         type="email"
                         className="form-control"
@@ -55,7 +55,7 @@ export default function Register() {
                         />
                     </div>
                     <div className="form-group mb-3">
-                        <label className="form-label">Password</label>
+                        <label className="form-label">Password <span className='text-danger'>*</span></label>
                         <input
                         type="password"
                         className="form-control"

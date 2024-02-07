@@ -13,7 +13,7 @@ export default function Adduser() {
   return (
     <div>  
         <div>
-            <div className='card mt-2 mx-3 p-3'>
+            <div className='card mt-4 mx-3 p-3'>
             <Form>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                     <Form.Control type="email" placeholder="Employee ID*" />

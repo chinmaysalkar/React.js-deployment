@@ -88,6 +88,7 @@ const Userlist = () => {
                       {user.email}
                     </td>
                     <td>
+                      <div className='mt-3'>
                       <span
                         style={{
                           backgroundColor: getPositionColor(user.position),
@@ -98,10 +99,12 @@ const Userlist = () => {
                       >
                         {user.position}
                       </span>
+                      </div>
                     </td>
-                    <td>{user.createddate}</td>
-                    <td>{user.role}</td>
+                    <td><div className='mt-3'>{user.createddate}</div></td>
+                    <td><div className='mt-3'>{user.role}</div></td>
                     <td>
+                      <div className='mt-2'>
                       {index !== 0 && (
                         <>
                           <button className='btn btn-sm mx-1'>
@@ -115,6 +118,7 @@ const Userlist = () => {
                           </button>
                         </>
                       )}
+                      </div>
                     </td>
                   </tr>
                 ))}

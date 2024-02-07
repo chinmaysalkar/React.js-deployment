@@ -9,8 +9,6 @@ import logo1 from '../assets/images/logo1.png'
 
 
 const Sidebar = () => {
-
-
   
   const [isSidebarExpanded, setIsSidebarExpanded] = useState(false);
 
