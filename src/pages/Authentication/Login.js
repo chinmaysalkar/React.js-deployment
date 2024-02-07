@@ -121,13 +121,13 @@ export default function Login() {
                                         value={password}
                                         onChange={handlePasswordChange}
                                     />
-                                    <span className="input-group-text bg-white" onClick={togglePasswordVisibility}>
+                                    {/* <span className="input-group-text bg-white" onClick={togglePasswordVisibility}>
                                         {showPassword ? (
                                         <FontAwesomeIcon icon={faEyeSlash} />
                                         ) : (
                                         <FontAwesomeIcon icon={faEye} />
                                         )}
-                                    </span>
+                                    </span> */}
                                     </div>
                                     {passwordError && <div className="invalid-feedback">{passwordError}</div>}
                             </div>
