@@ -75,14 +75,14 @@ export default function Invoice() {
       <div className="card mx-3 mt-3">
       <div className="card-body">
         <div className="row text-center">
-          <div className="col-lg-4">
+          <div className="col-lg-4 mb-2">
             <h4 className="mb-1">
               <i className="mdi mdi-trending-down text-danger"></i>{' '}
               <span className="counter">562</span>
             </h4>
             <div className="text-muted-dark">Total Approved</div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 mb-2">
             <h4 className="mb-1">
               <i className="mdi mdi-trending-up text-success"></i>{' '}
               <span className="counter">254</span>

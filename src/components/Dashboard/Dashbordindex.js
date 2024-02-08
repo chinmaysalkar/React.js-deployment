@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Dashbordindex() {
   return (
     <div>
-        <div className="row mx-1">
+        <div className="row mx-1 hrmsdashboard-index">
             <div className='col-6 col-md-4 col-xl-2 mb-3'>
                 <div className='card card-index border-0'>
                     <div className=" card-body ribbon">

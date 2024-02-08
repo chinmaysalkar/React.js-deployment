@@ -5,8 +5,8 @@ import img3 from '../../assets/images/slider3.svg';
 // import logo from '../../assets/images/command-symbol-svgrepo-com.svg'
 import logo from '../../assets/images/logo1.png'
 import { Link } from 'react-router-dom'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEyeSlash, faEye} from '@fortawesome/free-solid-svg-icons'; 
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faEyeSlash, faEye} from '@fortawesome/free-solid-svg-icons'; 
 
 
 export default function Login() {
@@ -32,9 +32,9 @@ export default function Login() {
     setRememberMe(!rememberMe);
   };
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
+  // const togglePasswordVisibility = () => {
+  //   setShowPassword(!showPassword);
+  // };
 
 
   const handleSubmit = (e) => {
@@ -80,9 +80,9 @@ export default function Login() {
                 <div className="auth_left">
                     <div className="card">
                         <div className="text-center mb-2">
-                            <a className="header-brand" href="/">
+                            <Link className="header-brand" to="/">
                                 <img src={logo} alt="" className='avatar-sml logo-login'/>
-                            </a>
+                            </Link>
                         </div>
                         <div className="card-body">
                             <div className="card-title">LOGIN TO YOUR ACCOUNT</div>

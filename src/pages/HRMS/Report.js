@@ -31,7 +31,7 @@ export default function Report() {
         
         <div className='d-flex justify-content-between'>
           <div className='all-top'>
-            <button onClick={() => handleButtonClick('expenses')} className={`top-bar-btn mx-2 ${activeButton === 'expenses' ? 'text-secondary border-top-2' : ''}`}>Expenses</button>
+            <button onClick={() => handleButtonClick('expenses')} className={`top-bar-btn mx-2 mb-2 ${activeButton === 'expenses' ? 'text-secondary border-top-2' : ''}`}>Expenses</button>
             <button onClick={() => handleButtonClick('invoice')} className={`top-bar-btn mx-2 ${activeButton === 'invoice' ? 'text-secondary border-top-2' : ''}`}>invoice</button>
             <button onClick={() => handleButtonClick('details')} className={`top-bar-btn mx-2 ${activeButton === 'details' ? 'text-secondary border-top-2' : ''}`}>Details</button>
           </div>

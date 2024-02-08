@@ -150,6 +150,12 @@ background: #f1f1f1 !important;
     line-height: 32px;
 }
 
+
+@media (max-width: 430px){
+   
+   
+}
+
 /*------------------------- 
         Header
 --------------------------- */
@@ -1042,6 +1048,7 @@ img {
 .auth .auth_right {
     width: calc(100% - 400px);   
     text-align: center;
+   
 }
 
 .carousel {
@@ -1052,6 +1059,7 @@ img {
     width: 100%;
     overflow: hidden;
 }
+
 .carousel-item {
     position: relative;
     display: none;
@@ -1066,8 +1074,23 @@ img {
 .auth .auth_left .card {
     padding: 20px;
     z-index: 99999;
+    margin-left: 20px;
 }
 
+@media (max-width: 430px){
+    .auth_right{
+        display: none;
+    
+    }
+
+    .auth .auth_left {
+        height: 100vh;
+        width: 500px;
+        padding: 0 25px; 
+        
+    }
+    
+}
 
 /*---------------------------- 
         Register 
@@ -1103,7 +1126,7 @@ img {
 
 @media only screen and (max-width: 992px){
     .auth .auth_left .card {
-        right: auto;
+        right: 0;
     }
 }
 

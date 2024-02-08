@@ -11,13 +11,13 @@ export default function Expenses() {
   const [currentPage] = useState(1);
 
   const [userList] = useState([
-    {  date: '07 March, 2018',item: 'HP Laptop',imageSrc:  avatar1,orderby: 'Marshall Nichols',amount: '$200', status: 'Pending',    paidby:'Paypal' },
-    {  date: '25 Jun, 2018',item: 'iMack Desktop ',imageSrc:  avatar1,orderby: ' Marshall Nichols', amount: '$378', status: 'Pending',   paidby:'Paypal' },
-    {  date: '12 July, 2018',item: 'Logitech USB Mouse, Keyboard ',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: '$653', status: 'Approved',   paidby:'Paypal' },
-    {  date: '13 July, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $451', status: 'Approved',  paidby:'MasterCard' },
-    {  date: '27 July, 2018',item: 'Dell Monitor 28 inch',imageSrc:  avatar1,orderby: ' Ava Alexander',amount: ' $989', status: 'Approved',  paidby:'Paypal' },
-    {  date: '07 March, 2018',item: 'Logitech USB Mouse, Keyboard',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $343', status: 'Approved',   paidby:'Paypal' },
-    {  date: '25 Jun, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: ' $653', status: 'Approved',   paidby:'MasterCard' },
+    {  date: '07 March, 2018',item: 'HP Laptop',imageSrc:  avatar1,orderby: 'Marshall Nichols',amount: '$200', status: 'Pending',    paidby:'Paypal', from: 'Paytm' },
+    {  date: '25 Jun, 2018',item: 'iMack Desktop ',imageSrc:  avatar1,orderby: ' Marshall Nichols', amount: '$378', status: 'Pending',   paidby:'Paypal', from: 'ebay USA' },
+    {  date: '12 July, 2018',item: 'Logitech USB Mouse, Keyboard ',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: '$653', status: 'Approved',   paidby:'Paypal', from: 'Amazon' },
+    {  date: '13 July, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $451', status: 'Approved',  paidby:'MasterCard', from: 'Amazon' },
+    {  date: '27 July, 2018',item: 'Dell Monitor 28 inch',imageSrc:  avatar1,orderby: ' Ava Alexander',amount: ' $989', status: 'Approved',  paidby:'Paypal', from: 'Flipkart Uk' },
+    {  date: '07 March, 2018',item: 'Logitech USB Mouse, Keyboard',imageSrc:  avatar1,orderby: ' Marshall Nichols',amount: ' $343', status: 'Approved',   paidby:'Paypal', from: 'Amazon' },
+    {  date: '25 Jun, 2018',item: 'MacBook Pro Air',imageSrc:  avatar1,orderby: ' Debra Stewart',amount: ' $653', status: 'Approved',   paidby:'MasterCard', from: 'Amazon' },
   ]);
 
   const getStatusColor = (status) => {
@@ -56,7 +56,7 @@ export default function Expenses() {
     <div>
       
       <div className="row mx-2 mt-3">
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 mb-2">
           <div className="card">
             <div className="card-body">
               <div className="card-value d-flex justify-content-end text-primary">23%</div>
@@ -72,7 +72,7 @@ export default function Expenses() {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 mb-2">
           <div className="card">
             <div className="card-body">
               <div className="card-value d-flex justify-content-end text-primary">52%</div>
@@ -88,7 +88,7 @@ export default function Expenses() {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-3 col-md-6 mb-2">
           <div className="card">
             <div className="card-body">
               <div className="card-value d-flex justify-content-end">27%</div>
@@ -135,6 +135,7 @@ export default function Expenses() {
             <tr>
               <th>ITEM</th>
               <th>ORDER BY</th>
+              <th>FROM</th>
               <th>DATE</th>
               <th>PAID BY</th>
               <th>STATUS</th>
@@ -146,6 +147,7 @@ export default function Expenses() {
               <tr key={user.orderby}>
                 <td>{user.item}</td>
                 <td>{user.orderby}</td>  
+                <td>{user.from}</td>  
                 <td>{user.date}</td>
                 <td>{renderPaidByIcon(user.paidby)}</td>
                 <td>

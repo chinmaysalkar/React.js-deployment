@@ -25,11 +25,11 @@ export default function Register() {
     <div className='pagewidth'>
         <div className="auth">
             <div className="auth_left">
-                <div className="card p-4">
+                <div className="card">
                 <div className="text-center mb-5">
-                    <a className="header-brand" href="/">
+                    <Link className="header-brand" to="/">
                     <img src={logo} alt="" className='avatar-sml logo-login'/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="card-body">
                     <div className="card-title">CREATE NEW ACCOUNT</div>
