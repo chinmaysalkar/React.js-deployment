@@ -58,7 +58,26 @@ background: #f1f1f1 !important;
 
     .pagewidth{
         max-width: 100%;
-        width: 310px;
+        width: 300px;
+    }
+
+    .top-change-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 350px){
+    .switch-top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pagewidth{
+        max-width: 100%;
+        width: 200px;
     }
 
     .top-change-btn{
@@ -170,6 +189,16 @@ background: #f1f1f1 !important;
     }
    
 }
+
+
+@media (max-width: 330px){
+    .dashboard-main{
+        max-width: 100%;
+        width: 300px;
+    }
+   
+}
+
 
 /*------------------------- 
         Header
@@ -559,6 +588,14 @@ a.sidebar-link {
     }
 }
 
+
+@media (max-width: 330px){
+    .report-main{
+        max-width: 100%;
+        width: 300px;
+    }
+}
+
 /*------------------------------ 
         Report Details 
 --------------------------------*/
@@ -586,6 +623,14 @@ a.sidebar-link {
     .department-main{
         max-width: 100%;
         width: 330px;
+    }
+}
+
+
+@media (max-width: 330px){
+    .department-main{
+        max-width: 100%;
+        width: 300px;
     }
 }
 /*--------------------------- 
@@ -628,6 +673,13 @@ a.sidebar-link {
         width: 330px;
     }
 }
+
+@media (max-width: 330px){
+    .holiday-main{
+        max-width: 100%;
+        width: 300px;
+    }
+}
 /*--------------------------- 
         Payroll 
 -----------------------------*/
@@ -643,6 +695,14 @@ a.sidebar-link {
     }
 }
 
+
+
+@media (max-width: 330px){
+    .payroll-main{
+        max-width: 100%;
+        width: 300px;
+    }
+}
  /*--------------------------- 
             PaySlip 
  -----------------------------*/
@@ -665,6 +725,14 @@ a.sidebar-link {
     .activities-main{
         max-width: 100%;
         width: 330px;
+    }
+}
+
+
+@media (max-width: 330px){
+    .activities-main{
+        max-width: 100%;
+        width: 300px;
     }
 }
 
@@ -696,6 +764,14 @@ a.sidebar-link {
 }
 
 
+@media (max-width: 330px){
+    .account-main{
+        max-width: 100%;
+        width: 300px;
+    }
+}
+
+
 
 /*---------------------------- 
         Employee
@@ -709,6 +785,14 @@ a.sidebar-link {
     .employee-main{
         max-width: 100%;
         width: 330px;
+    }
+}
+
+
+@media (max-width: 330px){
+    .employee-main{
+        max-width: 100%;
+        width: 300px;
     }
 }
 
@@ -741,6 +825,14 @@ a.sidebar-link {
     }
 }
 
+
+@media (max-width: 330px){
+    .calender-main{
+        max-width: 100%;
+        width: 300px;
+    }
+}
+
 /*------------------------------- 
         Contact 
 ---------------------------------*/
@@ -760,6 +852,7 @@ a.sidebar-link {
         
     }
 }  
+
 
 
 /*----------------------------- 
