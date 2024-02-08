@@ -45,6 +45,7 @@ import Error500 from './pages/Authentication/Error500';
 import ProjectDashboard from './pages/Project/ProjectDashboard';
 import NewPassword from './pages/Authentication/NewPassword';
 import VerifyEmail from './pages/Authentication/VerifyEmail';
+import Sidebar from './layouts/Sidebar';
 
 
 
@@ -69,6 +70,9 @@ function App() {
         <Route path="/error404" element={<Error404 />}/>
         <Route path="/error500" element={<Error500 />}/>
 
+        
+        
+        
         <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/users" element={<Users />}/>
         <Route path="/holidays" element={<Holidays />}/>
@@ -106,6 +110,8 @@ function App() {
         <Route path="/applicants" element={<Applicant />}/>
         <Route path="/resumes" element={<Resumes />}/>
         <Route path="/settings" element={<Settings />}/>
+        
+        
         
       </Routes>
       

@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import Sidebar from '../../layouts/Sidebar';
 
 export default function ProjectList() {
-  const [activeButton, setActiveButton] = useState('OnGoing');
+    const [activeButton, setActiveButton] = useState('OnGoing');
 
     const [currentComponent, setCurrentComponent] = useState('OnGoing');
 

@@ -8,13 +8,19 @@ import Sidebar from '../../layouts/Sidebar';
 
 
 export default function TaskBoard() {
-    const [currentComponent, setCurrentComponent] = useState('listview');
+  const [activeButton, setActiveButton] = useState('listview');
 
-    
+  const [currentComponent, setCurrentComponent] = useState('listview');
 
-    const handleButtonClick = (componentName) => {
-        setCurrentComponent(componentName);
-    };
+  const handleButtonClick = (componentName) => {
+      setCurrentComponent(componentName);
+      setActiveButton(componentName);
+  };
+  
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
 
     const progressData = [
@@ -32,8 +38,8 @@ export default function TaskBoard() {
 
         <div className='d-flex justify-content-between mx-3'>
         <div className='all-top d-flex'>
-          <button onClick={() => handleButtonClick('listview')} className='top-bar-btn mx-2 text-secondary'>ListView</button>
-          <button onClick={() => handleButtonClick('gridview')} className='top-bar-btn mx-2 text-secondary'>GridView</button>
+          <button onClick={() => handleButtonClick('listview')} className={`top-bar-btn mx-2 ${activeButton === 'listview' ? 'text-secondary border-top-2' : ''}`}>ListView</button>
+          <button onClick={() => handleButtonClick('gridview')} className={`top-bar-btn mx-2 ${activeButton === 'gridview' ? 'text-secondary border-top-2' : ''}`}>GridView</button>
         </div>
 
         <div className='d-flex pt-2'>
