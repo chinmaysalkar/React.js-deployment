@@ -22,7 +22,7 @@ export default function IndexProject() {
                 <div className='card card-index border-0'>
                     <div className='card-body ribbon'>
                     <div className="ribbon-box pink">8</div>
-                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none  mt-3" to="/holidays">
+                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none  mt-3" to="/todolist">
                         <FontAwesomeIcon icon={faThumbsUp} /> 
                         <p>Todo</p>                     
                         </Link>
