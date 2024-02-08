@@ -1200,7 +1200,6 @@ img {
 }
 
 
-
 .logo-login{
     width:  60px;
 }
@@ -1257,25 +1256,23 @@ img {
 }
 
 @media (max-width: 430px){
-    .auth_right{
+   .auth .auth_right{
         display: none;
-    
     }
 
-    .auth .auth_left {
+    .auth .auth_left{
         height: 100vh;
-        width: 500px;
-        padding: 0 25px; 
-        
+        margin: 0;
+        padding: 0 10px;
+        width: 100% !important;
     }
-    
 }
 
 /*---------------------------- 
         Register 
 ------------------------------*/
 .auth .auth_left .card {
-    right: -150px;
+    right: -140px;
 }
 .carousel {
     position: relative;
@@ -1303,7 +1300,7 @@ img {
     height: auto;
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 990px){
     .auth .auth_left .card {
         right: 0;
     }
