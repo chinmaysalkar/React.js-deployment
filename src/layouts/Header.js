@@ -208,7 +208,7 @@ export default function Header() {
     const username = getPageSpecificUsername(location.pathname);
 
   return (
-    <div className='col-lg-12 col-md-12 col-sm-12'>
+    <div className='col-lg-12 col-md-12 col-sm-12 mx-3'>
         <div className='mt-3'>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex'>
@@ -379,7 +379,7 @@ export default function Header() {
                 </div>
             </div>
         </div>
-        <hr />    
+       <div className='mr-3'>  <hr /> </div>       
     </div>
   )
 }
