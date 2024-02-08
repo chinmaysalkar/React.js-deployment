@@ -18,7 +18,7 @@ export default function Holidays() {
         </div>
 
 
-        <div className='holidays card p-4 mt-4 mx-3'>
+        <div className='holidays card p-4 mt-4 mx-3 table-responsive'>
             <table className="table table_custom spacing5 table-hover ">
                 <thead>
                     <tr>

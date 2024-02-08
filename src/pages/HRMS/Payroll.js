@@ -29,7 +29,7 @@ export default function Payroll() {
 
       <div>
 
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between top-change-btn'>
       <div className='all-top'>
         <button onClick={() => handleButtonClick('paylist')} className={`top-bar-btn mx-2 ${activeButton === 'paylist' ? 'text-secondary border-top-2' : ''}`}>EmployeeSalary</button>
         <button onClick={() => handleButtonClick('payslip')} className={`top-bar-btn mx-2 ${activeButton === 'payslip' ? 'text-secondary border-top-2' : ''}`}>Payslip</button>

@@ -29,7 +29,7 @@ export default function Employee() {
       <div className='employee-main px-3'>
     <Header/>
     
-    <div className='d-flex justify-content-between'>
+    <div className='d-flex justify-content-between top-change-btn'>
       <div className='all-top'>
         <button onClick={() => handleButtonClick('employeelist')} className={`top-bar-btn mx-2 ${activeButton === 'employeelist' ? 'text-secondary border-top-2' : ''}`}>All</button>
         <button onClick={() => handleButtonClick('viewemplyoee')} className={`top-bar-btn mx-2 ${activeButton === 'viewemplyoee' ? 'text-secondary border-top-2' : ''}`}>View</button>

@@ -78,7 +78,7 @@ export default function Adduser() {
             <hr />
             <h6>Module Permission</h6>
 
-            <div className='p-3 userlist'>
+            <div className='p-3 userlist table-responsive'>
                 <table className='table table-striped p-2'>
                     <thead>
                     <tr>
@@ -100,7 +100,7 @@ export default function Adduser() {
                     </tbody>
                 </table>
             </div>
-            <div>
+            <div className='mt-2'>
             <Button variant="primary">Add</Button>{' '}
             <Button variant="primary">Close</Button>{' '}
             </div>

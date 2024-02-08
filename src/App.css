@@ -55,6 +55,18 @@ background: #f1f1f1 !important;
         display: flex;
         flex-direction: column;
     }
+
+    .pagewidth{
+        max-width: 100%;
+        width: 310px;
+    }
+
+    .top-change-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
 /*------------------------- 
        HRMS DashBoard
@@ -152,7 +164,10 @@ background: #f1f1f1 !important;
 
 
 @media (max-width: 430px){
-   
+    .dashboard-main{
+        max-width: 100%;
+        width: 330px;
+    }
    
 }
 
@@ -297,12 +312,7 @@ body {
   height: 40px;
  
 }
-.main {
-    min-height: 100vh;
-    width: 100%;
-    overflow: scroll;
-    transition: all 0.35s ease-in-out;  
-}
+
 
 #sidebar {
     width: 50px;
@@ -445,7 +455,7 @@ a.sidebar-link {
     .wrapper{
         margin: 0 !important;
     }
-    
+   
 } 
 
 
@@ -504,6 +514,15 @@ a.sidebar-link {
     width: 100%;
 }
 
+
+@media (max-width: 430px){
+    .users-main{
+        max-width: 100%;
+        width: 330px;
+    }
+}
+
+
 /*------------------------ 
         User List
 ---------------------------- */
@@ -532,6 +551,14 @@ a.sidebar-link {
     width: 100%;
 }
 
+
+@media (max-width: 430px){
+    .report-main{
+        max-width: 100%;
+        width: 330px;
+    }
+}
+
 /*------------------------------ 
         Report Details 
 --------------------------------*/
@@ -552,6 +579,14 @@ a.sidebar-link {
 .department .table td{
     font-size: 14px;
     font-family: montserrat,sans-serif;
+}
+
+
+@media (max-width: 430px){
+    .department-main{
+        max-width: 100%;
+        width: 330px;
+    }
 }
 /*--------------------------- 
         Events
@@ -587,11 +622,25 @@ a.sidebar-link {
   border: none;
 }
 
+@media (max-width: 430px){
+    .holiday-main{
+        max-width: 100%;
+        width: 330px;
+    }
+}
 /*--------------------------- 
         Payroll 
 -----------------------------*/
 .payroll-main{
     width: 100%;
+}
+
+
+@media (max-width: 430px){
+    .payroll-main{
+        max-width: 100%;
+        width: 330px;
+    }
 }
 
  /*--------------------------- 
@@ -609,6 +658,14 @@ a.sidebar-link {
 ------------------------------*/
 .activities-main{
     width: 100%;
+}
+
+
+@media (max-width: 430px){
+    .activities-main{
+        max-width: 100%;
+        width: 330px;
+    }
 }
 
 .timeline-item {
@@ -631,11 +688,28 @@ a.sidebar-link {
 }
 
 
+@media (max-width: 430px){
+    .account-main{
+        max-width: 100%;
+        width: 330px;
+    }
+}
+
+
+
 /*---------------------------- 
         Employee
 ------------------------------ */
 .employee-main{
     width: 100%;
+}
+
+
+@media (max-width: 430px){
+    .employee-main{
+        max-width: 100%;
+        width: 330px;
+    }
 }
 
 /*------------------------------ 
@@ -657,6 +731,14 @@ a.sidebar-link {
 -------------------------------*/
 .calender-main{
     width: 100%;
+}
+
+
+@media (max-width: 430px){
+    .calender-main{
+        max-width: 100%;
+        width: 330px;
+    }
 }
 
 /*------------------------------- 

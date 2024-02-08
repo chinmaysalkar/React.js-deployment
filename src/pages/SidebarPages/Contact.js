@@ -35,9 +35,9 @@ export default function Contact() {
                 <div className="col-lg-12">
                     <Card>
                     <Card.Body>
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-between top-change-btn">
                        
-                        <div className='contact-gridtop mb-2'>
+                        <div className='contact-gridtop mb-2 '>
                             <Link to='/contact' className='text-secondary mx-2'>
                             <FontAwesomeIcon icon={faList} className='mx-2' />
                               List 

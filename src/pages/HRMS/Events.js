@@ -31,11 +31,12 @@ export default function Events() {
           <Header/>
         </div>
 
-        <div className='card mt-3 px-3 pt-3 pb-3 mx-3'>
+        <div className='card p-3 mt-3 table-responsive'>
           <div className='card-header mb-2 bg-white'>
-            <div><h6 className='text-secondary'>SARA HOPKINS</h6></div>
-            <div></div>      
+            <div><h6 className='text-secondary'>SARA HOPKINS</h6></div>     
           </div>
+        
+        <div className='table-responsive'>
         <Calendar
           localizer={localizer}
           
@@ -44,6 +45,7 @@ export default function Events() {
           endAccessor="end"
           style={{ height: 600 }}
         />
+        </div>        
         </div>
 
         <div>

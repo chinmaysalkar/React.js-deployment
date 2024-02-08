@@ -28,7 +28,7 @@ export default function ProjectList() {
       <Sidebar/>
       <div className='pagewidth px-3'>
     <Header />
-    <div className='d-flex justify-content-between mx-3'>
+    <div className='d-flex justify-content-between mx-3 top-change-btn'>
       <div className='all-top'>
         <button onClick={() => handleButtonClick('OnGoing')} className={`top-bar-btn mx-2 ${activeButton === 'OnGoing' ? 'text-secondary border-top-2' : ''}`}>OnGoing</button>
         <button onClick={() => handleButtonClick('UpComing')} className={`top-bar-btn mx-2 ${activeButton === 'UpComing' ? 'text-secondary border-top-2' : ''}`}>UpComing</button>

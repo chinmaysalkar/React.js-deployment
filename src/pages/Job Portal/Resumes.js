@@ -37,7 +37,7 @@ export default function Resumes() {
       <div className='pagewidth mx-3'>
         <Header/>
 
-        <div className='d-flex justify-content-between mx-2'>
+        <div className='d-flex justify-content-between mx-2 top-change-btn'>
         <div className='all-top'>
           <button onClick={() => handleButtonClick('listview')} className={`top-bar-btn mx-2 ${activeButton === 'listview' ? 'text-secondary border-top-2' : ''}`}>List View</button>
           <button onClick={() => handleButtonClick('gridview')} className={`top-bar-btn mx-2 ${activeButton === 'gridview' ? 'text-secondary border-top-2' : ''}`}>Grid View</button>

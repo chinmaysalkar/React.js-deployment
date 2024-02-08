@@ -29,7 +29,7 @@ export default function Department() {
       <div className='department-main px-3'>
     <Header/>
 
-    <div className='d-flex justify-content-between'>
+    <div className='d-flex justify-content-between top-change-btn'>
       <div className='all-top'>
         <button onClick={() => handleButtonClick('listview')} className={`top-bar-btn mx-2 ${activeButton === 'listview' ? 'text-secondary border-top-2' : ''}`}>ListView</button>
         <button onClick={() => handleButtonClick('gridlist')} className={`top-bar-btn mx-2 ${activeButton === 'gridlist' ? 'text-secondary border-top-2' : ''}`}>GridView</button>

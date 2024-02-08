@@ -26,7 +26,7 @@ export default function Users() {
       <div>
       <Header/>
       </div>
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between top-change-btn'>
     <div className='all-top'>
       <button onClick={() => handleButtonClick('userlist')} className={`top-bar-btn mx-2 ${activeButton === 'userlist' ? 'text-secondary border-top-2' : ''}`}>List</button>
       <button onClick={() => handleButtonClick('adduser')} className={`top-bar-btn mx-2 ${activeButton === 'adduser' ? 'text-secondary border-top-2' : ''}`}>AddNew</button>

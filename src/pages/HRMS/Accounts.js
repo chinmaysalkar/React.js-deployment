@@ -25,7 +25,7 @@ export default function Accounts() {
     <div className='account-main px-3'>
       <Header/>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between top-change-btn'>
           <div className='all-top'>
             <button onClick={() => handleButtonClick('invoice')} className={`top-bar-btn mx-2 ${activeButton === 'invoice' ? 'text-secondary border-top-2' : ''}`}>Invoices</button>
             <button onClick={() => handleButtonClick('payments')} className={`top-bar-btn mx-2 ${activeButton === 'payments' ? 'text-secondary border-top-2' : ''}`}>Payments</button>

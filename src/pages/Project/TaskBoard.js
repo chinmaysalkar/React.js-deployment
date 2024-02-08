@@ -33,7 +33,7 @@ export default function TaskBoard() {
       <div className='pagewidth mx-3'>
         <Header/>
 
-        <div className='d-flex justify-content-between mx-3'>
+        <div className='d-flex justify-content-between mx-3 top-change-btn'>
         <div className='all-top d-flex'>
           <button onClick={() => handleButtonClick('listview')} className={`top-bar-btn mx-2 ${activeButton === 'listview' ? 'text-secondary border-top-2' : ''}`}>ListView</button>
           <button onClick={() => handleButtonClick('gridview')} className={`top-bar-btn mx-2 ${activeButton === 'gridview' ? 'text-secondary border-top-2' : ''}`}>GridView</button>

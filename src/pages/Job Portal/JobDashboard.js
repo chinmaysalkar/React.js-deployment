@@ -97,7 +97,6 @@ export default function JobDashboard() {
         <Sidebar/>
         <div className='pagewidth px-3'>
         <Header/>
-
         <div className='section mt-3'>
             <div className='container-fluid'>
                 <div className='row row-deck flex-wrap'>
