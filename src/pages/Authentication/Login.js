@@ -74,7 +74,7 @@ export default function Login() {
 
 
   return (
-    <div className='pagewidth'>
+    <div className=''>
         <div className="loginpage">
             <div className="auth row">
                 <div className="auth_left">

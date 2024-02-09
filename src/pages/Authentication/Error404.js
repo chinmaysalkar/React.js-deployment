@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Error404() {
   return (
-    <div className='pagewidth'>
+    <div className=''>
         <div className="auth">
             <div className="auth_left">
                 <div className="card">

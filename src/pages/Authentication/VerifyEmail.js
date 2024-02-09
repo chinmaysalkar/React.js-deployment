@@ -12,7 +12,7 @@ export default function VerifyEmail() {
 
 
   return (
-    <div className='pagewidth'>
+    <div className=''>
         <div className="auth">
             <div className="auth_left">
             <div className="card">
