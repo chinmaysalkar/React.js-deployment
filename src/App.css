@@ -67,6 +67,11 @@ background: #f1f1f1 !important;
         gap: 10px;
     }
     
+    .main-sidebar-pages{
+        max-width: 100%;
+        width: 300px;
+    }
+    
 }
 
 @media (max-width: 350px){
