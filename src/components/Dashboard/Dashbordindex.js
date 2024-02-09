@@ -12,7 +12,7 @@ export default function Dashbordindex() {
                 <div className='card card-index border-0'>
                     <div className=" card-body ribbon">
                         <div className="ribbon-box green">5</div>
-                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3" to="/users">
+                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3 index-icon" to="/users">
                         <FontAwesomeIcon icon={faUser} className='mx-2' />
                         <span>Users</span>
                         </Link>
@@ -21,9 +21,9 @@ export default function Dashbordindex() {
             </div>
             <div className='col-6 col-md-4 col-xl-2 mb-3'>
                 <div className='card card-index border-0'>
-                    <div className='card-body'>
-                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none  mt-3" to="/holidays">
-                        <FontAwesomeIcon icon={faThumbsUp} /> 
+                    <div className='card-body index-icon'>
+                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none  mt-3 " to="/holidays">
+                        <FontAwesomeIcon icon={faThumbsUp}/> 
                         <p>Holidays</p>                     
                         </Link>
                     </div>
@@ -33,7 +33,7 @@ export default function Dashbordindex() {
                 <div className='card card-index border-0'>
                     <div className=" card-body ribbon">
                         <div className="ribbon-box orange">8</div>
-                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3" to="/events">
+                        <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3 index-icon" to="/events">
                         <FontAwesomeIcon icon={faCalendarDays} />
                         
                         <span>Events</span>
@@ -43,9 +43,9 @@ export default function Dashbordindex() {
             </div>
             <div className='col-6 col-md-4 col-xl-2  mb-3'>
                 <div className='card card-index border-0'>
-                    <div className='card-body'>
+                    <div className='card-body index-icon'>
                         <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3" to="/payroll">
-                        <FontAwesomeIcon icon={faCreditCard} />
+                        <FontAwesomeIcon icon={faCreditCard}/>
                         
                         <span>Payroll</span>
                         </Link>
@@ -54,7 +54,7 @@ export default function Dashbordindex() {
             </div>
             <div className='col-6 col-md-4 col-xl-2  mb-3'>
                 <div className='card card-index border-0'>
-                    <div className='card-body'>
+                    <div className='card-body index-icon'>
                         <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3" to="/accounts">
                         <FontAwesomeIcon icon={faCalculator} />        
                         <span>Accounts</span>
@@ -64,7 +64,7 @@ export default function Dashbordindex() {
             </div>
             <div className='col-6 col-md-4 col-xl-2  mb-3'>
                 <div className='card card-index border-0'>
-                    <div className='card-body'>
+                    <div className='card-body index-icon'>
                         <Link className="my_sort_cut text-muted d-flex justify-content-center flex-column text-center text-decoration-none mt-3" to="/report">
                         <FontAwesomeIcon icon={faChartPie} />
                         <span>Report</span>

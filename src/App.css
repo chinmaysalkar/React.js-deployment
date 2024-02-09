@@ -302,6 +302,13 @@ background: #f1f1f1 !important;
 }
 
 
+.index-icon a{
+    transition: transform .2s;
+}
+
+.index-icon a:hover{
+    transition: scale(1.1);
+}
 
 
 /*----------------------------
@@ -553,7 +560,6 @@ a.sidebar-link {
 .side-icon-ui span:hover{
     color: #0e2238;   
 }
-
 
 
 
@@ -925,8 +931,10 @@ a.sidebar-link {
 .chat_app .chat_windows ul {
     padding: 20px 0;
     height: calc(100vh - 210px);
-    overflow-y: scroll;
-    
+    overflow: auto;
+}
+.chat_windows ul ::-webkit-scrollbar{
+    display: none;
 }
 .chat_app .chat_windows .other-message {
     text-align: left;

@@ -108,7 +108,7 @@ export default function FileManager() {
     <div className='main-sidebar-pages px-3'>
         <Header/>
 
-        <div className="card mt-3">
+        <div className="card mt-3 mx-3">
           <div className="card-header bg-white d-flex justify-content-between border-0 mx-3 px-2 mt-3">
             <h5 className="card-title">Recently Accessed Files</h5>
             <div className="card-options">              
@@ -117,7 +117,7 @@ export default function FileManager() {
           </div>
           <div className="card-body">
             <div className=" d-flex flex-wrap justify-content-start px-3 mb-2">
-              <div className='file-folder col-lg-2 col-md-3 col-sm-4'>
+              <div className='file-folder col-lg-2 col-md-3 col-sm-4 mb-2'>
                 <a href="/#" className='d-flex'>
                   <div className="icon mx-2 mt-2">
                   <FontAwesomeIcon icon={faFolder} className='file-icon'/>
@@ -130,7 +130,7 @@ export default function FileManager() {
                 </a>
               </div>
               
-              <div className='file-folder col-lg-2 col-md-3 col-sm-4'>
+              <div className='file-folder col-lg-2 col-md-3 col-sm-4 mb-2'>
                 <a href="/#" className='d-flex'>
                   <div className="icon mx-2 mt-2">
                   <FontAwesomeIcon icon={faFileWord}  className='file-icon'/>
@@ -143,7 +143,7 @@ export default function FileManager() {
                 </a>
               </div>
 
-              <div className='file-folder col-lg-2 col-md-3 col-sm-4'>
+              <div className='file-folder col-lg-2 col-md-3 col-sm-4 mb-2'>
                 <a href="/#" className='d-flex'>
                   <div className="icon mx-2 mt-2">
                   <FontAwesomeIcon icon={faFilePdf}  className='file-icon'/>
@@ -161,7 +161,7 @@ export default function FileManager() {
         </div>
 
 
-        <div className="card bg-none b-none mt-3">
+        <div className="card bg-none b-none mt-3 mx-3">
           <div className="card-body pt-0">
             <div className="table-responsive">
               <table className="table table-hover table-vcenter  text-nowrap mb-0">

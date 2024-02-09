@@ -55,12 +55,12 @@ export default function Projectsummary() {
                 {currentPageclientnames.map((user) => (
                   <tr key={user.project}>
 
-                    <td>{user.no}</td>
-                    <td><div className='mt-2'>{user.clientname}</div></td>
+                    <td><div className='mt-3'>{user.no}</div></td>
+                    <td><div className='mt-3'>{user.clientname}</div></td>
                     <td><img className="img-thumbnail rounded-circle avatar-sml" src={user.imageSrc} alt=''/></td>
-                    <td><div className='mt-2'>{user.project}</div></td>
-                    <td><div className='mt-2'>{user.projectcost}</div></td>
-                    <td><div className='mt-2'>{user.payment}</div></td> 
+                    <td><div className='mt-3'>{user.project}</div></td>
+                    <td><div className='mt-3'>{user.projectcost}</div></td>
+                    <td><div className='mt-3'>{user.payment}</div></td> 
                     <td>
                     <div className='mt-2'>
                     <span style={{ backgroundColor: getStatusColor(user.status), padding: '3px',borderRadius:'5px', color:'white' }}>
