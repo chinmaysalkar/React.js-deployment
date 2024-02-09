@@ -181,11 +181,7 @@ body {
   color: white;
   font-weight: 300;
 }
-/* 
-#sidebar:not(.expand) .sidebar-logo,
-#sidebar:not(.expand).sidebar-nav a.sidebar-link span{
-    display: none;
-} */
+
 
 #sidebar:not(.expand):hover{
     display: none;  

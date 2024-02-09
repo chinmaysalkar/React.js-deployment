@@ -24,7 +24,7 @@ const Search = () => {
               <table className="table table-hover card-table table_custom">
                 <tbody>
                   <tr>
-                    <td>
+                    <td className='p-3'>
                       <h6>
                         <a target="_blank" href="fake_url" className='text-black'>Bootstrap 4 Light &amp; Dark Admin with Free VueJs</a>
                       </h6>
@@ -33,12 +33,12 @@ const Search = () => {
                         It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                       </small>
                     </td>
-                    <td>
+                    <td className='p-3'>
                       <span className="custom-badge d-flex mt-4 mx-1"><FontAwesomeIcon icon={faEye} className="mx-1 mt-1"/> 1501</span>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className='p-3'>
                       <h6>
                         <a target="_blank" href="fake_url"className='text-black'>Bootstrap 4 Admin Dashboard Template</a>
                       </h6>
@@ -47,12 +47,12 @@ const Search = () => {
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
                       </small>
                     </td>
-                    <td>
+                    <td className='p-3'>
                       <span className="custom-badge d-flex mt-4 mx-1"><FontAwesomeIcon icon={faEye} className="mx-1 mt-1"/> 1894</span>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className='p-3'>
                       <h6>
                         <a target="_blank" href="fake_url" className='text-black'>The ultimate Bootstrap 4 Admin Dashboard</a>
                       </h6>
@@ -61,12 +61,12 @@ const Search = () => {
                         Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                       </small>
                     </td>
-                    <td>
+                    <td className='p-3'>
                       <span className="custom-badge d-flex mt-4 mx-1"><FontAwesomeIcon icon={faEye} className="mx-1 mt-1"/> 1205</span>
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td className='p-3'>
                       <h6>
                         <a target="_blank" href="fake_url" className='text-black'>Bootstrap 4 Admin Dashboard Template</a>
                       </h6>
@@ -75,7 +75,7 @@ const Search = () => {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                       </small>
                     </td>
-                    <td>
+                    <td className='p-3'>
                       <span className="custom-badge d-flex mt-4 mx-1"><FontAwesomeIcon icon={faEye} className="mx-1 mt-1"/> 985</span>
                     </td>
                   </tr>

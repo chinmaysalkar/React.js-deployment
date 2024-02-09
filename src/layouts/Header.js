@@ -219,7 +219,7 @@ export default function Header() {
 
                 <div className='d-flex mx-2'>
                     <div className='mx-2'>
-                        <select className="custom-select p-1">
+                        <select className="custom-select p-2">
                             <option>Year</option>
                             <option>Month</option>
                             <option>Week</option>

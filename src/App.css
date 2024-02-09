@@ -926,6 +926,7 @@ a.sidebar-link {
     padding: 20px 0;
     height: calc(100vh - 210px);
     overflow-y: scroll;
+    
 }
 .chat_app .chat_windows .other-message {
     text-align: left;
@@ -1328,6 +1329,7 @@ img {
     }
 
     .auth .auth_left{
+        max-height: 100vh;
         height: 100vh;
         margin: 0;
         padding: 0 10px;

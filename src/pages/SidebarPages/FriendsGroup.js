@@ -144,63 +144,65 @@ export default function FriendsGroup() {
       <div className="chat_windows">
         {/* Chat messages */}
         <ul className="mb-0 mx-5">
-      {messages.map((message, index) => (
-        <li key={index} className={message.type}>
-          {message.avatar && <img className="avatar mr-3 mb-0" src={message.avatar} alt="avatar" />}
-          <div className="message mx-5">
-            {message.type === 'my-message' ? (
-              <>
-                <p className={`bg-light-blue ${message.type}`}>{message.content}</p>
-                {message.files && (
-                  <div className="file_folder">
-                    {message.files.map((file, fileIndex) => (
-                      <div key={fileIndex} className="icon">
-                        <i className={`fa ${file.icon} text-${file.color}`}></i>
-                        <div className="file-name">
-                          <p className="mb-0 text-muted">{file.name}</p>
-                          <small>{`Size: ${file.size}`}</small>
-                        </div>
+          {messages.map((message, index) => (
+            <li key={index} className={message.type}>
+              {message.avatar && <img className="avatar mr-3 mb-0" src={message.avatar} alt="avatar" />}
+              <div className="message mx-5">
+                {message.type === 'my-message' ? (
+                  <>
+                    <p className={`bg-light-blue ${message.type}`}>{message.content}</p>
+                    {message.files && (
+                      <div className="file_folder">
+                        {message.files.map((file, fileIndex) => (
+                          <div key={fileIndex} className="icon">
+                            <i className={`fa ${file.icon} text-${file.color}`}></i>
+                            <div className="file-name">
+                              <p className="mb-0 text-muted">{file.name}</p>
+                              <small>{`Size: ${file.size}`}</small>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <p className={`bg-light-cyan ${message.type}`}>{message.content}</p>
+                  </>
                 )}
-              </>
-            ) : (
-              <>
-                <p className={`bg-light-cyan ${message.type}`}>{message.content}</p>
-              </>
-            )}
-            <span className="time">{message.time}</span>
-          </div>
-        </li>
-      ))}
-    </ul>
+                <span className="time">{message.time}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
 
         
-      {/* Message input and options */}
-      <div className="chat-message clearfix mx-3 mb-5 mt-5 border p-4">
-        <a href="/#"><FontAwesomeIcon icon={faCamera} className='mx-2' /></a>
-        <a href="/#"><FontAwesomeIcon icon={faVideoCamera} className='mx-2' /></a>
-        <a href="/#"><FontAwesomeIcon icon={faPaperPlane}className='mx-2' /></a>
-        <form onSubmit={handleSubmit}>
-          <div className="input-group mb-0 mt-2">
-            <input
-              type="text"
-              className="form-control border-0"
-              placeholder="Enter text here..."
-              value={messageInput}
-              onChange={handleInputChange}
-            />
+        {/* Message input and options */}
+        <div className="chat-message clearfix mx-3 mb-5 mt-5 border p-4">
+          <div className='d-flex mb-5'>
+          <div className='mx-2'><FontAwesomeIcon icon={faCamera}  /></div>
+          <div className='mx-2'><FontAwesomeIcon icon={faVideoCamera} /></div>
+          <div className='mx-2'><FontAwesomeIcon icon={faPaperPlane} /></div>
           </div>
-        </form>
+          
+          <form onSubmit={handleSubmit}>
+            <div className="input-group mb-0 mt-2">
+              <input
+                type="text"
+                className="form-control border-0"
+                placeholder="Enter text here..."
+                value={messageInput}
+                onChange={handleInputChange}
+              />
+            </div>
+          </form>
+        </div>
       </div>
+
     </div>
-
-
-      </div>
-      </div>
-      </div>
-      </div>
+    </div>
+    </div>
+    </div>
 
 
       
