@@ -499,6 +499,12 @@ a.sidebar-link {
         width: 100%;
         z-index: 1;
       }
+
+    #profile-sidebar{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
 } 
 
 
