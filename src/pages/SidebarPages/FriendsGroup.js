@@ -10,7 +10,7 @@ import Sidebar from '../../layouts/Sidebar';
 
 export default function FriendsGroup() {
 
-  const [showChatList, setShowChatList] = useState(true);
+  const [showChatList, setShowChatList] = useState(false);
 
   const toggleChatList = () => {
     setShowChatList(!showChatList);
@@ -132,13 +132,13 @@ export default function FriendsGroup() {
         <div className='row'>
         <div className='col-lg-8 col-md-12'>
           <div className='card bg-none b-none'>
-          <div className='card-header pt-1 d-flex justify-content-between bg-white border-0 border-bottom mx-2'>
+          <div className='card-header pt-1 d-flex justify-content-between bg-white border-0 border-bottom mx-2 top-change-btn'>
             <h6 className="card-title mt-3">Friends Group <br /><small className='text-secondary'>Last seen: 2 hours ago</small></h6>
-            <div className="card-options mt-3">
-              <Link to="" className="p-1 chat_list_btn"><FontAwesomeIcon icon={faAlignRight} onClick={toggleChatList}/></Link>              
-              <Link to="/#" className="p-1 mx-2"><FontAwesomeIcon icon={faPlus} /></Link>
-              <Link to="/#" className="p-1 mx-2"><FontAwesomeIcon icon={faGear} /></Link>
-              <Link to="/#" className="p-1"><FontAwesomeIcon icon={faRefresh} /></Link>
+            <div className="card-options mt-3 chat-group-btn d-flex">
+              <div className="p-1 chat_list_btn"><FontAwesomeIcon icon={faAlignRight} onClick={toggleChatList}/></div>              
+              <div className="p-1 mx-2"><FontAwesomeIcon icon={faPlus} /></div>
+              <div className="p-1 mx-2"><FontAwesomeIcon icon={faGear} /></div>
+              <div className="p-1"><FontAwesomeIcon icon={faRefresh} /></div>
             </div>
           </div>
       <div className="chat_windows">
@@ -177,28 +177,24 @@ export default function FriendsGroup() {
     </ul>
 
         
-
-
-
-
-        {/* Message input and options */}
-        <div className="chat-message clearfix mx-3 mb-5 mt-5 border p-4">
-          <a href="/#"><FontAwesomeIcon icon={faCamera} className='mx-2' /></a>
-          <a href="/#"><FontAwesomeIcon icon={faVideoCamera} className='mx-2' /></a>
-          <a href="/#"><FontAwesomeIcon icon={faPaperPlane}className='mx-2' /></a>
-          <form onSubmit={handleSubmit}>
-            <div className="input-group mb-0 mt-2">
-              <input
-                type="text"
-                className="form-control border-0"
-                placeholder="Enter text here..."
-                value={messageInput}
-                onChange={handleInputChange}
-              />
-            </div>
-          </form>
-        </div>
+      {/* Message input and options */}
+      <div className="chat-message clearfix mx-3 mb-5 mt-5 border p-4">
+        <a href="/#"><FontAwesomeIcon icon={faCamera} className='mx-2' /></a>
+        <a href="/#"><FontAwesomeIcon icon={faVideoCamera} className='mx-2' /></a>
+        <a href="/#"><FontAwesomeIcon icon={faPaperPlane}className='mx-2' /></a>
+        <form onSubmit={handleSubmit}>
+          <div className="input-group mb-0 mt-2">
+            <input
+              type="text"
+              className="form-control border-0"
+              placeholder="Enter text here..."
+              value={messageInput}
+              onChange={handleInputChange}
+            />
+          </div>
+        </form>
       </div>
+    </div>
 
 
       </div>
@@ -209,36 +205,40 @@ export default function FriendsGroup() {
 
       
     {/* Chat List */}
+    <div className='mt-5'>
     {showChatList && (
       <div className="chat_list section-white mt-5" id="users">
-      <ul className="nav nav-tabs border-bottom" role="tablist">
-        <li className="nav-item">
-          <a className="nav-link bg-gray text-secondary" id="users-tab" data-toggle="tab" href="#users-list" role="tab" aria-controls="users-list" aria-selected="true">Users</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-secondary" id="groups-tab" data-toggle="tab" href="#groups" role="tab" aria-controls="groups" aria-selected="false">Groups</a>
-        </li>
-      </ul>
-      <div className="input-group mt-2 mb-2">
-        <input type="text" className="form-control search" placeholder="Search..." />
-      </div>
-      <div className="tab-content">
-        {/* Users Tab */}
-        <div className="tab-pane fade show active " id="userslist" role="tabpanel" aria-labelledby="users-tab">
-          <ul className="right_chat list-unstyled list">
-            {renderListItems(users)}
-          </ul>
+        <ul className="nav nav-tabs border-bottom" role="tablist">
+          <li className="nav-item">
+            <a className="nav-link bg-gray text-secondary" id="users-tab" data-toggle="tab" href="#users-list" role="tab" aria-controls="users-list" aria-selected="true">Users</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-secondary" id="groups-tab" data-toggle="tab" href="#groups" role="tab" aria-controls="groups" aria-selected="false">Groups</a>
+          </li>
+        </ul>
+        <div className="chat_list_btn"><FontAwesomeIcon icon={faAlignRight} onClick={toggleChatList}/></div> 
+        <div className="input-group mt-2 mb-2">
+          <input type="text" className="form-control search" placeholder="Search..." />
         </div>
 
-        {/* Groups Tab */}
-        <div className="tab-pane fade" id="groups" role="tabpanel" aria-labelledby="groups-tab">
-          <ul className="right_chat list-unstyled list">
-            {renderListItems(groups)}
-          </ul>
+        <div className="tab-content">
+          {/* Users Tab */}
+          <div className="tab-pane fade show active " id="userslist" role="tabpanel" aria-labelledby="users-tab">
+            <ul className="right_chat list-unstyled list">
+              {renderListItems(users)}
+            </ul>
+          </div>
+
+          {/* Groups Tab */}
+          <div className="tab-pane fade" id="groups" role="tabpanel" aria-labelledby="groups-tab">
+            <ul className="right_chat list-unstyled list">
+              {renderListItems(groups)}
+            </ul>
+          </div>
         </div>
       </div>
-      </div>
-    )}
+      )}
+    </div>
 
     </div>
 

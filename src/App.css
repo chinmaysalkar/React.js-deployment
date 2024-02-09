@@ -990,13 +990,33 @@ img {
     text-align: right;
 }
 
+@media (max-width: 430px){
+    .chat-group-btn{
+        display: flex ;
+    }
+    .chat_list{
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        background-color: #efefef;
+        border: 1px solid #867fda;
+        margin: 5% !important;
+        height: auto !important;
+
+    }
+}
+
 /* ChatList */
 
 .chat_list{
     position: absolute;
     z-index: 1;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    background-color: #efefef;
+    margin-top: 10% !important;
+   
 }
+
 
 .page .section-white {
     background: #f1f1f1;
@@ -1006,6 +1026,7 @@ img {
     .chat_app .chat_list {
         right: -320px;
     }
+    
     
 }
 
