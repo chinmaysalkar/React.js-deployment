@@ -56,15 +56,17 @@ export default function Projectsummary() {
                   <tr key={user.project}>
 
                     <td>{user.no}</td>
-                    <td>{user.clientname}</td>
+                    <td><div className='mt-2'>{user.clientname}</div></td>
                     <td><img className="img-thumbnail rounded-circle avatar-sml" src={user.imageSrc} alt=''/></td>
-                    <td>{user.project}</td>
-                    <td>{user.projectcost}</td>
-                    <td>{user.payment}</td> 
+                    <td><div className='mt-2'>{user.project}</div></td>
+                    <td><div className='mt-2'>{user.projectcost}</div></td>
+                    <td><div className='mt-2'>{user.payment}</div></td> 
                     <td>
+                    <div className='mt-2'>
                     <span style={{ backgroundColor: getStatusColor(user.status), padding: '3px',borderRadius:'5px', color:'white' }}>
                       {user.status}
                     </span>
+                    </div>
                     </td> 
                                         
                   </tr>
