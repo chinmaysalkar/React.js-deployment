@@ -4,7 +4,7 @@
 
 body{
     background: #f1f1f1;
-    font-family: montserrat, sans-serif;
+    font-family: montserrat, sans-serif !important;
 }
 
 
