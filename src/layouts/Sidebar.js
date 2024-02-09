@@ -392,139 +392,139 @@ const Sidebar = () => {
 
     </div>
     )}  
-    <div className={` sid ${isSidebarExpanded1 ? 'expand' : ''}`} style={{ display: isSidebarExpanded1 ? 'block' : 'none', backgroundColor:'white', width:'400px' }}>
-      <div className='user-div open mt-4 mx-2 d-flex justify-content-between'>
-        <h5 className="brand-name d-flex mx-2">Epic <span className='mx-2'>HR</span></h5>
-        <p className="user_btn sidebar-profile-icon mx-3">
-          <FontAwesomeIcon icon={faArrowRightFromBracket} onClick={toggleSidebar1}/>
-        </p>
-      </div>
-      <div>
-        {userData.map((user, index) => (
-          <div key={index} className="card border-0 mt-2 p-3">
-            <div className="card-body">
-              <div className="media">
-                <img className="rounded-circle profile-img1 mt-2 mx-2" src={user.imageSrc} alt="avatar" />
-                <div className="media-body mx-3">
-                  <h5 className="m-0">{user.name}</h5>
-                  <p className="text-muted mb-0">{user.role}</p>
-                  <ul className="social-links list-inline mb-0 mt-2">
-                    {user.socialLinks.map((link, linkIndex) => (
-                      <li key={linkIndex} className="list-inline-item mx-2 ">
-                        <a href={link.href} title={link.title} data-toggle="tooltip" data-original-title={link.title} className='text-secondary'>
-                        {getFontAwesomeIcon(link.icon)}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-
-      <div className='mb-5'>
-        <div  className={`card bg-white border-0 px-3${isCardCollapsed ? ' card-collapsed' : ''}`}>
-        <div className="card-header border-0 bg-white d-flex justify-content-between" >
-          <div><h6 className="card-title">STATISTICS</h6></div>
-          
-          <div className="card-options">
-            <span className="card-options-collapse mx-3" data-toggle="card-collapse" onClick={toggleCardCollapse}>
-              {isCardCollapsed ? (
-                <FontAwesomeIcon icon={faChevronDown} />
-              ) : (
-                <FontAwesomeIcon icon={faChevronUp} />
-              )}
-            </span>
-            <span className="card-options-remove " data-toggle="card-remove">
-            <FontAwesomeIcon icon={faTimes} />
-            </span>
-          </div>
+      <div className={` sid ${isSidebarExpanded1 ? 'expand' : ''}`} style={{ display: isSidebarExpanded1 ? 'block' : 'none', backgroundColor:'white', width:'400px' }}>
+        <div className='user-div open mt-4 mx-2 d-flex justify-content-between'>
+          <h5 className="brand-name d-flex mx-2">Epic <span className='mx-2'>HR</span></h5>
+          <p className="user_btn sidebar-profile-icon mx-3">
+            <FontAwesomeIcon icon={faArrowRightFromBracket} onClick={toggleSidebar1}/>
+          </p>
         </div>
-
-        {!isCardCollapsed && (
-        <div className="card-body">
-          <div className="text-center">
-            <div className="row mb-2">
-              {statisticsData.slice(0, 2).map((data, index) => (
-                <div key={index} className="col-6 pb-3">
-                  <label className="mb-0">{data.label}</label>
-                  <h4 className="font-30 font-weight-bold">{data.value}</h4>
+        <div>
+          {userData.map((user, index) => (
+            <div key={index} className="card border-0 mt-2 p-3">
+              <div className="card-body">
+                <div className="media">
+                  <img className="rounded-circle profile-img1 mt-2 mx-2" src={user.imageSrc} alt="avatar" />
+                  <div className="media-body mx-3">
+                    <h5 className="m-0">{user.name}</h5>
+                    <p className="text-muted mb-0">{user.role}</p>
+                    <ul className="social-links list-inline mb-0 mt-2">
+                      {user.socialLinks.map((link, linkIndex) => (
+                        <li key={linkIndex} className="list-inline-item mx-2 ">
+                          <a href={link.href} title={link.title} data-toggle="tooltip" data-original-title={link.title} className='text-secondary'>
+                          {getFontAwesomeIcon(link.icon)}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-          {statisticsData.slice(2).map((data, index) => (
-            <div key={index} className="form-group mb-4">
-              <label className="d-block">
-                {data.title} <span className="float-right">{data.percent}%</span>
-              </label>
-              <div className="progress progress-xs">
-                <div
-                  className={`progress-bar ${data.color}`}
-                  role="progressbar"
-                  aria-valuenow={data.percent}
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style={{ width: `${data.percent}%` }}
-                ></div>
               </div>
             </div>
           ))}
         </div>
-        )}
-        </div>
-      </div>
 
 
-      <div>
-        <div className={`card bg-white border-0 px-3${isCardCollapsed1 ? ' card-collapsed' : ''}`}>
-        <div className="card-header border-0 bg-white d-flex justify-content-between">
-          <div><h6 className="card-title">FRIENDS</h6></div>
-          
-          <div className="card-options">
-            <span className="card-options-collapse mx-3" data-toggle="card-collapse" onClick={toggleCardCollapse1}>
-              {isCardCollapsed1 ? (
-                <FontAwesomeIcon icon={faChevronDown} />
-              ) : (
-                <FontAwesomeIcon icon={faChevronUp} />
-              )}
-            </span>
-            <span className="card-options-remove " data-toggle="card-remove">
-            <FontAwesomeIcon icon={faTimes} />
-            </span>
+        <div className='mb-5'>
+          <div  className={`card bg-white border-0 px-3${isCardCollapsed ? ' card-collapsed' : ''}`}>
+          <div className="card-header border-0 bg-white d-flex justify-content-between" >
+            <div><h6 className="card-title">STATISTICS</h6></div>
+            
+            <div className="card-options">
+              <span className="card-options-collapse mx-3" data-toggle="card-collapse" onClick={toggleCardCollapse}>
+                {isCardCollapsed ? (
+                  <FontAwesomeIcon icon={faChevronDown} />
+                ) : (
+                  <FontAwesomeIcon icon={faChevronUp} />
+                )}
+              </span>
+              <span className="card-options-remove " data-toggle="card-remove">
+              <FontAwesomeIcon icon={faTimes} />
+              </span>
+            </div>
+          </div>
+
+          {!isCardCollapsed && (
+          <div className="card-body">
+            <div className="text-center">
+              <div className="row mb-2">
+                {statisticsData.slice(0, 2).map((data, index) => (
+                  <div key={index} className="col-6 pb-3">
+                    <label className="mb-0">{data.label}</label>
+                    <h4 className="font-30 font-weight-bold">{data.value}</h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {statisticsData.slice(2).map((data, index) => (
+              <div key={index} className="form-group mb-4">
+                <label className="d-block">
+                  {data.title} <span className="float-right">{data.percent}%</span>
+                </label>
+                <div className="progress progress-xs">
+                  <div
+                    className={`progress-bar ${data.color}`}
+                    role="progressbar"
+                    aria-valuenow={data.percent}
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style={{ width: `${data.percent}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+          )}
           </div>
         </div>
 
-        {!isCardCollapsed1 && (
-        <div className="card-body">
-          <ul className="right_chat list-unstyled">
-            {users.map(user => (
-              <li key={user.id}>
 
-                <Link to="#!">
-                  <div className="media mb-3 mt-2">
-                    <img className="media-object" src={user.avatar} alt={user.name} />
-                    <div className="media-body">
-                      <span className="name">{user.name}</span>
-                      <span className="message">{user.role}</span>
-                      <span className={`badge badge-${user.status === 'online' ? 'success' : 'danger'} status-badge`}>
-                        {user.status}
-                      </span>
+        <div>
+          <div className={`card bg-white border-0 px-3${isCardCollapsed1 ? ' card-collapsed' : ''}`}>
+          <div className="card-header border-0 bg-white d-flex justify-content-between">
+            <div><h6 className="card-title">FRIENDS</h6></div>
+            
+            <div className="card-options">
+              <span className="card-options-collapse mx-3" data-toggle="card-collapse" onClick={toggleCardCollapse1}>
+                {isCardCollapsed1 ? (
+                  <FontAwesomeIcon icon={faChevronDown} />
+                ) : (
+                  <FontAwesomeIcon icon={faChevronUp} />
+                )}
+              </span>
+              <span className="card-options-remove " data-toggle="card-remove">
+              <FontAwesomeIcon icon={faTimes} />
+              </span>
+            </div>
+          </div>
+
+          {!isCardCollapsed1 && (
+          <div className="card-body">
+            <ul className="right_chat list-unstyled">
+              {users.map(user => (
+                <li key={user.id}>
+
+                  <Link to="#!">
+                    <div className="media mb-3 mt-2">
+                      <img className="media-object" src={user.avatar} alt={user.name} />
+                      <div className="media-body">
+                        <span className="name">{user.name}</span>
+                        <span className="message">{user.role}</span>
+                        <span className={`badge badge-${user.status === 'online' ? 'success' : 'danger'} status-badge`}>
+                          {user.status}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          )}
+          </div>
         </div>
-        )}
-        </div>
-      </div>
 
-    </div>  
+      </div>  
     </>   
 
   );

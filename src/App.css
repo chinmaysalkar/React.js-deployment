@@ -494,7 +494,11 @@ a.sidebar-link {
     .wrapper{
         margin: 0 !important;
     }
-   
+    #sidebar {
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
 } 
 
 
