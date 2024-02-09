@@ -1241,6 +1241,9 @@ img {
     font-family: montserrat,sans-serif;
 }
 
+.login-main{
+    overflow: hidden;
+}
 
 .logo-login{
     width:  60px;

@@ -22,7 +22,7 @@ export default function Register() {
         
     };
   return (
-    <div className=''>
+    <div className='login-main'>
         <div className="auth">
             <div className="auth_left">
                 <div className="card">

@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Error500() {
   return (
-    <div className=''>
+    <div className='login-main'>
         <div className="auth">
             <div className="auth_left">
                 <div className="card">

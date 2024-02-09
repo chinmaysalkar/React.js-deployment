@@ -22,7 +22,7 @@ export default function ForgotPassword() {
     };
 
   return (
-    <div className=''>
+    <div className='login-main'>
         <div className="auth">
             <div className="auth_left">
             <div className="card">
