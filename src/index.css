@@ -217,6 +217,10 @@ a.sidebar-link {
     color: #2C2945;
 }
 
+.row li a span:hover{
+    color: #2C2945;
+}
+
 .row .col-3{
     margin-left: 10px;
 }
