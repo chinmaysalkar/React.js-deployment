@@ -214,6 +214,7 @@ a.sidebar-link {
 .row li a:hover{
     border: none;
     background: none;
+    color: #2C2945;
 }
 
 .row .col-3{
