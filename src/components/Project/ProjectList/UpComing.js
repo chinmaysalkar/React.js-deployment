@@ -31,7 +31,7 @@ export default function UpComing() {
             avatar: avatar1,
             work: '68:00',
             duration: '105:0 hrs',
-            priority: 'High',
+            priority: 'None',
         },
 
 
@@ -41,7 +41,7 @@ export default function UpComing() {
             avatar: avatar3,
             work: '68:00',
             duration: '105:0 hrs',
-            priority: 'High',
+            priority: 'None',
         },
         
         {
@@ -83,11 +83,11 @@ export default function UpComing() {
                 <table className="table  table-striped table-vcenter mb-0">
                     <thead>
                     <tr>
-                        <th>Owner</th>
-                        <th>Milestone</th>
-                        <th>Work</th>
-                        <th>Duration</th>
-                        <th>Priority</th>
+                        <th>OWNER</th>
+                        <th>MILESTONE</th>
+                        <th>WORK</th>
+                        <th>DURATION</th>
+                        <th>PRIORITY</th>
                     </tr>
                     </thead>
                     <tbody>

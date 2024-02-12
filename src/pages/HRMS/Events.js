@@ -13,13 +13,7 @@ import Sidebar from '../../layouts/Sidebar';
 export default function Events() {
   
   const localizer = momentLocalizer(moment);
-  // const [events, setEvents] = useState([
-  //   {
-  //     title: '',
-  //     start: new Date(2024, 0, 15, 10, 0), // Year, Month (0-based), Day, Hour, Minute
-  //     end: new Date(2024, 0, 15, 12, 0),
-  //   }, 
-  // ]);
+
 
   return (
     <>

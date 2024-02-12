@@ -60,34 +60,72 @@ export default function ProjectList() {
 
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Add Upcoming Project</Modal.Title>
+          <Modal.Title><h5>Add Upcoming Project</h5></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div class="mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Owner Name "/>
-          </div>
+          <div className='row'>
+            <div className='col-lg-6'>
+              <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Owner Name "/>
+              </div>
 
-          <div class="mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mile Stone "/>
-          </div>
+              <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Mile Stone "/>
+              </div>
 
-          <div class="mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Work "/>
-          </div>
+              <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Work "/>
+              </div>
 
-          <div class="mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Duration"/>
-          </div>
+              <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Duration"/>
+              </div>
 
-          <div class="mb-3">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Priority"/>
+              <div class="mb-3">
+              <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Priority"/>
+              </div>
+            </div>
+
+            <div className='col-lg-6'>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="Project Name "/>
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput8" placeholder="Creator "/>
+              </div>
+
+              <div class="mb-3">
+                <input type="date" class="form-control" id="exampleFormControlInput9" placeholder="Date "/>
+              </div>
+
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput10" placeholder="Deal "/>
+              </div>
+
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput11" placeholder="Client "/>
+              </div>
+
+              <div class="mb-3">
+                <select name="teamselector" id="teamselector" class="form-select">
+                  <option>Team Members</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Description " rows="3"></textarea>
+              </div>
+            </div>
           </div>
         </Modal.Body>
+
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" className='btn-top' onClick={handleClose}>
             Add
           </Button>
         </Modal.Footer>

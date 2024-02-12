@@ -391,7 +391,8 @@ const Sidebar = () => {
       </aside>
 
     </div>
-    )}  
+    )} 
+     
       <div id='profile-sidebar' className={` sid ${isSidebarExpanded1 ? 'expand' : ''}`} style={{ display: isSidebarExpanded1 ? 'block' : 'none', backgroundColor:'white', width:'400px' }}>
         <div className='user-div open mt-4 mx-2 d-flex justify-content-between'>
           <h5 className="brand-name d-flex mx-2">Epic <span className='mx-2'>HR</span></h5>
