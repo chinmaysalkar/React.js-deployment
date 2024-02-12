@@ -80,7 +80,7 @@ export default function UpComing() {
         <div className="card mx-3 mt-3">
             <div className="card-body">
                 <div className="table-responsive">
-                <table className="table  table-striped table-vcenter mb-0">
+                <table className="table table-striped table-vcenter mb-0">
                     <thead>
                     <tr>
                         <th><span>OWNER</span></th>
@@ -94,19 +94,21 @@ export default function UpComing() {
                     {tasks.map((task, index) => (
                         <tr key={index}>
                         <td>
+                            <div>
                             <img
                             src={task.avatar}
                             alt="Avatar"
-                            className="table-img rounded-circle mr-2 avatar-sm"
+                            className="table-img rounded-circle mr-2 avatar-sm mx-2"
                             />
-                            <span className='mx-2'>{task.owner}</span>
+                            <span className='mt-2'>{task.owner}</span>
+                            </div>
                         </td>
-                        <td><span>{task.milestone}</span></td>
+                        <td><span className='d-flex align-items-center mt-1'>{task.milestone}</span></td>
                         <td>
-                            <span>{task.work}</span>
+                            <span className='d-flex align-items-center mt-1'>{task.work}</span>
                         </td>
-                        <td><span>{task.duration}</span></td>
-                        <td><span>{task.priority}</span></td>                         
+                        <td><span className='d-flex align-items-center mt-1'>{task.duration}</span></td>
+                        <td><span className='d-flex align-items-center mt-1'>{task.priority}</span></td>                         
                         </tr>
                     ))}
                     </tbody>

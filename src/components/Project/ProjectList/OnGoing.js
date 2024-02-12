@@ -112,14 +112,14 @@ export default function OnGoing() {
       };
 
   return (
-    <div className='pagewidth'>
+    <div className='pagewidth'> 
         <div className="row mt-3 mx-1">
         {projectData.map((project, index) => (
           <div key={index} className="col-lg-4 col-md-12">
             <div className="card mb-3">
               <div className="card-header d-flex justify-content-between bg-white border-0 mt-3">
                 <h6 className="card-title">{project.title}</h6>
-                <div className="card-options d-flex">
+                <div className="card-options d-flex mx-2">
                     <Form.Check
                         type="switch"
                         id="custom-switch"         
