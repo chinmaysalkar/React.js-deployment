@@ -99,10 +99,15 @@ export default function OnGoing() {
       };
 
 
-      const [isCardCollapsed, setCardCollapsed] = useState(false);
+      const [isCardCollapsed, setCardCollapsed] = useState(Array(projectData.length).fill(false));
 
-      const toggleCardCollapse = () => {
-        setCardCollapsed(!isCardCollapsed);
+      // Function to toggle the collapse state of a card at a given index
+      const toggleCardCollapse = (index) => {
+        setCardCollapsed(prevState => {
+          const newState = [...prevState];
+          newState[index] = !newState[index];
+          return newState;
+        });
       };
 
   return (
@@ -118,8 +123,12 @@ export default function OnGoing() {
                         type="switch"
                         id="custom-switch"         
                     />
-                  <span className="card-options-collapse mx-3" data-toggle="card-collapse" onClick={toggleCardCollapse}>
-                    {isCardCollapsed ? (
+                  <span
+                    className="card-options-collapse mx-3"
+                    onClick={() => toggleCardCollapse(index)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {isCardCollapsed[index] ? (
                       <FontAwesomeIcon icon={faChevronDown} />
                     ) : (
                       <FontAwesomeIcon icon={faChevronUp} />
@@ -128,7 +137,7 @@ export default function OnGoing() {
                 </div>
               </div>
 
-              {!isCardCollapsed && (
+              {!isCardCollapsed[index] && (
                 <>
                 <div className="card-body">
 
