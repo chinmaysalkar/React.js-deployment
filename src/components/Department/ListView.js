@@ -49,7 +49,7 @@ export default function ListView() {
             <table className='table table-striped p-2'>
               <thead>
                 <tr>
-                  <th>no</th>
+                  <th>#</th>
                   <th>DEPARTMENT</th>
                   <th>DEPARTMENT HEAD</th>
                   <th>TOTAL EMPLOYEE</th>

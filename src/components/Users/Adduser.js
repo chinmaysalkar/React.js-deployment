@@ -20,13 +20,13 @@ export default function Adduser() {
                 </Form.Group>
             </Form>
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-lg-6 col-md-6 col-sm-12'>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                     <Form.Control type="email" placeholder="First Name*" />
                 </Form.Group>
                 </div>
                     
-                <div className='col-6'>
+                <div className='col-lg-6 col-md-6 col-sm-12'>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                     <Form.Control type="email" placeholder="Last Name" />
                 </Form.Group>
@@ -34,19 +34,19 @@ export default function Adduser() {
             </div>
 
             <div className='row'>
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                         <Form.Control type="email" placeholder="Eamil ID" />
                     </Form.Group>
                 </div>
 
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                         <Form.Control type="email" placeholder="Mobile No" />
                     </Form.Group>
                 </div>
 
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6 mb-3'>
                     <Form.Select aria-label="Default select example">
                         <option>select write Type</option>
                         <option value="1">Super Admin</option>
@@ -57,19 +57,19 @@ export default function Adduser() {
 
             </div> 
             <div className='row'>
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                         <Form.Control type="email" placeholder="Username*" />
                     </Form.Group>
                 </div>
 
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                         <Form.Control type="email" placeholder="Password" />
                     </Form.Group>
                 </div>
 
-                <div className='col-4'>
+                <div className='col-lg-4 col-md-4 col-sm-6'>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">                  
                         <Form.Control type="email" placeholder="Confirm Password" />
                     </Form.Group>
@@ -92,7 +92,7 @@ export default function Adduser() {
                     {userList.map((user, index) => (
                         <tr key={index}>
                         <td>{user.role}</td>
-                        <td><input className='form-check-input' type="checkbox" /></td>                        
+                        <td><input className='form-check-input' type="checkbox"/></td>                        
                         <td><input className='form-check-input' type="checkbox" /></td>
                         <td><input className='form-check-input' type="checkbox" /></td>
                         </tr>
