@@ -1101,8 +1101,18 @@ img {
 .table-img{
     width: 35px;
 }
+ 
+/* OnGoing Component */
+table td span{
+    font-size: 14px;
+    font-family:  montserrat, sans-serif;
+}
 
-
+table th span{
+    font-size: 14px;
+    font-family:  montserrat, sans-serif;
+    font-weight: 400;
+}
 
 /*----------------------------- 
         TaskBoard 

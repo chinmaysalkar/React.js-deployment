@@ -98,6 +98,7 @@ export default function OnGoing() {
         }
       };
 
+      
 
       const [isCardCollapsed, setCardCollapsed] = useState(Array(projectData.length).fill(false));
 
@@ -124,7 +125,7 @@ export default function OnGoing() {
                         id="custom-switch"         
                     />
                   <span
-                    className="card-options-collapse mx-3"
+                    className="card-options-collapse mx-1"
                     onClick={() => toggleCardCollapse(index)}
                     style={{ cursor: 'pointer' }}
                   >
@@ -166,19 +167,20 @@ export default function OnGoing() {
 
                   <div className="col-5 py-1"><strong>Team:</strong></div>
                   <div className="col-7 py-1">
-                    <div className="avatar-list avatar-list-stacked">
-                      {project.team.map((avatar, avatarIndex) => (
-                        <img
-                          key={avatarIndex}
-                          className="avatar avatar-sm"
-                          src={avatar}
-                          data-toggle="tooltip"
-                          data-original-title="Avatar Name"
-                          alt={`Avatar ${avatarIndex}`}
-                        />
-                      ))}
-                      <span className="avatar avatar-sm">{`+${project.team.length}`}</span>
-                    </div>
+                  <div className="avatar-list avatar-list-stacked avatar-marg">
+                    {project.team.map((avatar, avatarIndex) => (
+                      <img
+                        key={avatarIndex}
+                        className="avatar avatar-sm"
+                        src={avatar}
+                        style={{ zIndex: project.team.length - avatarIndex }}
+                        data-toggle="tooltip"
+                        data-original-title="Avatar Name"
+                        alt={`Avatar ${avatarIndex}`}
+                      />
+                    ))}
+                    <span className="avatar avatar-sm">{`+${project.team.length}`}</span>
+                  </div>
                   </div>
                 </div>
                 </div>

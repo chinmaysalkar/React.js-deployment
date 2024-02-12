@@ -83,11 +83,11 @@ export default function UpComing() {
                 <table className="table  table-striped table-vcenter mb-0">
                     <thead>
                     <tr>
-                        <th>OWNER</th>
-                        <th>MILESTONE</th>
-                        <th>WORK</th>
-                        <th>DURATION</th>
-                        <th>PRIORITY</th>
+                        <th><span>OWNER</span></th>
+                        <th><span>MILESTONE</span></th>
+                        <th><span>WORK</span></th>
+                        <th><span>DURATION</span></th>
+                        <th><span>PRIORITY</span></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -101,11 +101,11 @@ export default function UpComing() {
                             />
                             <span className='mx-2'>{task.owner}</span>
                         </td>
-                        <td>{task.milestone}</td>
+                        <td><span>{task.milestone}</span></td>
                         <td>
                             <span>{task.work}</span>
                         </td>
-                        <td>{task.duration}</td>
+                        <td><span>{task.duration}</span></td>
                         <td><span>{task.priority}</span></td>                         
                         </tr>
                     ))}
