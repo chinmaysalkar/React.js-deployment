@@ -103,6 +103,10 @@ export default function Header() {
         switch (pathname) {
         case '/dashboard':
             return 'HR Dashboard';
+
+        case '/myprofile':
+            return 'My Profile'; 
+
         case '/report':
             return 'Report';
         case '/holidays':
@@ -365,7 +369,7 @@ export default function Header() {
                                 <FontAwesomeIcon icon={faUser}  />
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu style={{ position: 'absolute', left: '50%', transform: 'translateX(-100%)' }}>                               
-                                <Dropdown.Item href="/profile"><FontAwesomeIcon  icon={faUser} className="dropdown-icon"/> Profile</Dropdown.Item>
+                               <Dropdown.Item> <Link to="/myprofile"><FontAwesomeIcon  icon={faUser} className="dropdown-icon"/> Profile</Link></Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon  icon={faGear} className="dropdown-icon"/> Settings</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon  icon={faEnvelope} className="dropdown-icon"/> Inbox</Dropdown.Item>
                                 <Dropdown.Item><FontAwesomeIcon  icon={faPaperPlane} className="dropdown-icon"/> Message</Dropdown.Item>

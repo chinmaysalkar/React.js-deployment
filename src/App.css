@@ -5,6 +5,7 @@
 body{
     background: #f1f1f1;
     font-family: montserrat, sans-serif !important;
+    color: #012970;
 }
 
 
@@ -213,6 +214,7 @@ background: #f1f1f1 !important;
 /*------------------------- 
         Header
 --------------------------- */
+
 .media .media-object {
     transition: all .3s ease-in-out;
     border-radius: 40px;
@@ -350,14 +352,14 @@ body {
 .logo{
   width: 50px;
   height: 50px;
-  /* background-color: #5a5278; */
-  /* border-radius: 50%; */
 }
+
 .logo1{
   width: 50px;
   height: 40px;
  
 }
+
 
 
 #sidebar {
@@ -387,11 +389,12 @@ body {
 
 .sidebar-fixed1{
     transition: transform .1s;
-    
+    color: #2c2945 !important;
 }
 
 .sidebar-fixed1:hover{
     transform: scale(2);
+    color: rgb(83, 197, 238) !important;
 }
 
 .sidebar-profile-icon{
@@ -559,6 +562,74 @@ a.sidebar-link {
 
 .side-icon-ui span:hover{
     color: #0e2238;   
+}
+
+/*-------------------------------- 
+My Profile 
+-----------------------------------*/
+.list-inline-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.social-links li a {
+    background: #f8f8f8;
+    border-radius: 50%;
+    color: #5a5278;
+    display: inline-block;
+    height: 1.75rem;
+    width: 1.75rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.social-links li a:hover{
+    color: black;
+    border: 1px solid black;
+    background: white;
+}
+.btn-outline-primary {
+    color: #5a5278;
+    border-color: #5a5278;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    border-color: #5a5278;
+    background: #5a5278 ;
+}
+.profile-basic h3{
+    font-weight: bold;
+    color: #5a5278;
+}
+.profile-basic p{
+    color: #5a5278;
+}
+
+.profile-basic1 .font-weight-bold{
+    font-weight: bold;
+    color: #5a5278;
+}
+
+.profile-view .profile-img-wrap {
+    height: 120px;
+    width: 120px; 
+}
+
+@media (max-width: 575px){
+    .profile-view .profile-img-wrap {
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 768px){
+    .profile-view .profile-basic .profile-info-left {
+        border-right: none;
+        border-bottom: 2px dashed #cccccc;
+        margin: 0 0 20px;
+        padding: 0 0 20px;
+    }
 }
 
 

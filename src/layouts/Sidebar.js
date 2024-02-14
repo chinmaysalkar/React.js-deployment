@@ -405,7 +405,7 @@ const Sidebar = () => {
             <div key={index} className="card border-0 mt-2 p-3">
               <div className="card-body">
                 <div className="media">
-                  <img className="rounded-circle profile-img1 mt-2 mx-2" src={user.imageSrc} alt="avatar" />
+                  <Link to='/myprofile'><img className="rounded-circle profile-img1 mt-2 mx-2" src={user.imageSrc} alt="avatar" /></Link>
                   <div className="media-body mx-3">
                     <h5 className="m-0">{user.name}</h5>
                     <p className="text-muted mb-0">{user.role}</p>

@@ -45,7 +45,7 @@ import Error500 from './pages/Authentication/Error500';
 import ProjectDashboard from './pages/Project/ProjectDashboard';
 import NewPassword from './pages/Authentication/NewPassword';
 import VerifyEmail from './pages/Authentication/VerifyEmail';
-import Sidebar from './layouts/Sidebar';
+import MyProfile from './pages/Profile/MyProfile';
 
 
 
@@ -110,6 +110,7 @@ function App() {
         <Route path="/applicants" element={<Applicant />}/>
         <Route path="/resumes" element={<Resumes />}/>
         <Route path="/settings" element={<Settings />}/>
+        <Route path="/myprofile" element={<MyProfile />}/>
         
         
         
