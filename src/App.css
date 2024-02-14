@@ -1279,7 +1279,24 @@ table th span{
     border-style: solid;
     border-width: 16px 8px 16px 0;
 }
+.client-social-icon{
+    color: #2c2945;
+}
 
+.client-social-icon:hover{
+    color: lightgreen;
+}
+
+.client-view-btn{
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.client-view-btn:hover{
+    border: 1px solid black !important;
+    color: black;
+}
 
 /*------------------------------ 
         Ticket Details 

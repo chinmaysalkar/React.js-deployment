@@ -53,7 +53,7 @@ export default function Employee() {
 
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-      <Modal.Title>Add Department</Modal.Title>
+      <Modal.Title>Add Employee</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
@@ -112,7 +112,7 @@ export default function Employee() {
       <Button variant="secondary" onClick={handleClose}>
           Close
       </Button>
-      <Button variant="primary" onClick={handleClose}>
+      <Button variant="primary btn-top" onClick={handleClose}>
           Save Changes
       </Button>
       </Modal.Footer>       
