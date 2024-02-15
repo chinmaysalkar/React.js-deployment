@@ -129,7 +129,7 @@ export default function ProjectClients() {
 
 
 
-<Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title className='text-center'>Add Client</Modal.Title>
         </Modal.Header>

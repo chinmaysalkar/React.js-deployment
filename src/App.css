@@ -1297,6 +1297,17 @@ table th span{
     border: 1px solid black !important;
     color: black;
 }
+/*------------------------------------ 
+        TODO List 
+--------------------------------------*/
+
+ .completed {
+    text-decoration: line-through;
+    color: #808488;
+  }
+
+
+
 
 /*------------------------------ 
         Ticket Details 
